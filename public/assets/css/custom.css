@@ -1,0 +1,364 @@
+/* Add here all your css styles (customizations) */
+ul.nav.navbar-nav {
+    margin-right: 73px;
+}
+.btn-u.btn-u-yellow {
+    background: #5fb611;
+    padding: 7px;
+    width: 128px;
+}
+
+button.btn-u.btn-u-yellow:hover {
+    background: #5fb611;
+}
+.btn-u.btn-u-dark {
+    background: #72c02c;
+}
+button.btn-u.btn-u-dark:hover {
+    background: #72c02c;
+}
+.btn-u.btn-u-green {
+    background: #5fb611;
+    margin: 246px 154px;
+    width: 125px;
+    height: 37px;
+    font-family: sans-serif;
+}
+button.btn-u.btn-u-green a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button.btn-u.btn-u-green:hover {
+    background: #5fb611;
+    /* font-family: verdana; */
+}
+/* how To work section*/
+section#Hows {
+    background: #f0f0f091;
+    padding: 30px 0px;
+}
+section#Hows i {
+    font-size: 25px;
+    margin-left: 95px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 100%;
+}
+section#Hows h4 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+}
+section#Hows p {
+    text-align: center;
+}
+section#Hows h1 {
+    text-align: center;
+    font-weight: bolder;
+}
+.bg-grey {
+    background: #fff;
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+}
+
+
+
+
+
+
+/* slider Section*/
+section#home-slider {
+    background: #f7f7f7;
+    height: 475px;
+}
+
+/* About*/
+.responsive-image img {
+    width: 100%;
+}
+section#About-quik {
+    padding: 30px 0px;
+}
+.breadcrumbs h1 {
+    color: #666;
+    font-size: 30px;
+    margin-top: 8px;
+}
+section#How {
+    background: #f7f7f7;
+    height: 400px;
+    padding: 30px 0px;
+}
+
+/* cooming soon*/
+ul.phones {
+    list-style-type: none;
+}
+ul.phones img {
+    width: 100px;
+}
+ul.phones li {
+    float: left;
+}
+li.onr img {
+    width: 153px;
+}
+
+/* back*/
+ul.list-unstyled.owl-ts-v1.owl-carousel.owl-theme {
+    background: #fff;
+}
+
+
+
+
+
+
+/* sign 1*/
+
+
+.col-md-6.col-sm-6.hidden-xs.image-block.equal-height-column img {
+    width: 100%;
+    height: 634px;
+}
+.col-md-6.col-sm-6.hidden-xs.image-block.equal-height-column {
+    background: #fff;
+}
+button.btn-u.btn-block.rounded a {
+    color: #fff;
+    text-decoration: none;
+}
+span.maore {
+    margin-left: 21px;
+}
+
+/* driver verification*/
+.sky-form header {
+    color: inherit;
+    display: block;
+    font-size: 20px;
+    background: rgba(128, 128, 128, 0.38);
+    font-weight: 400;
+    padding: 8px 30px;
+}
+div#sky-form {
+    width: 70%;
+    margin-left: 15%;
+}
+}
+footer.bt {
+    margin-left: 78%;
+}
+
+.sky-form .col-3 {
+    width: 25%;
+   
+}
+span.ag {
+    margin-left: 16px;
+}
+
+
+.inline-group ul {
+    list-style-type: none;
+}
+.inline-group li {
+    float: left;
+}
+li.ra {
+    margin-left: 48px;
+}
+fieldset.one {
+    margin-left: 120px;
+}
+label.checkbo {
+    margin-left: 13px;
+}
+/*login*/
+section#login-form img {
+    width: 100%;
+    height: 500px;
+}
+/* otp Verification*/
+
+section#otp{
+    background-image: url(../img/back0.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.field:last-child {
+    margin: 0 auto;
+}
+
+.field {
+    margin: 0 auto 40px;
+    width: 280px;
+    position: relative;
+}
+.otpblkwrap .placeholder, .otpblkwrap .fldtxt {
+    text-align: center;
+}
+.placeholder {
+    bottom: 8px;
+    color: #504f4f85;
+    font-size: 12px;
+    left: 0;
+    line-height: 13px;
+    position: absolute;
+}
+
+input#otp {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    width: 100%;
+    padding: 0px 0px 7px 0px;
+    border-bottom: 1px solid #0000002e;
+    position: relative;
+    background: transparent;
+    font-size: 16px;
+}
+p.num {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 10px;
+}
+.reg-block h2, .reg-block p, .reg-block p a {
+    color: #7777778c;
+}
+span.re {
+    color: #ed3561;
+    font-size: 12px;
+    border-bottom: 1px solid #ed3561;
+}
+button.btn-u.btn-blocksss {
+    margin-left: 83px;
+    width: 42%;
+    height: 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.reg-block-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.reg-block-header p {
+    text-align: center;
+    font-size: 11px;
+    color: #a0a0a0d6;
+}
+
+/* booking page*/
+
+.form-block .input-group input.form-control {
+    background: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: rgba(214,214,214,.5);
+    border-left: none;
+    color: #969595;
+    height: 39px;
+}
+section#booking-form .login-block .btn {
+    padding: 7px 12px;
+    font-size: 9px;
+}
+section#booking-form .form-block h2 {
+    font-size: 12px;
+    border-bottom: 2px solid#72c02c;
+}
+.headline li.dropdown {
+    list-style-type: none;
+}
+section#booking-form .margin-bottom-30 {
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-bottom: 2px solid #4bc72d;
+}
+section#booking-form iframe {
+    width: 67%;
+}
+span.black .btn-u.btn-u-dark {
+    background: #000;
+    padding: 8px;
+    font-size: 12px;
+}
+ section.margin .checkbox, .radio {
+    position: relative;
+    display: inline;
+    
+    margin-bottom: 10px;
+    margin-left: 48px;
+}
+section.change {
+    margin-right: 30px;
+}
+ section.change .panel-default>.panel-heading {
+    color: #333;
+    background-color: transparent;
+    border-color: transparent;
+}
+ section.change .panel-default {
+    border-color: transparent;
+}
+.sky-form a {
+    background: #76bb6a;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+/* search results */
+
+div#profile {
+    border: 17px solid #f0f0f0;
+}
+h2.heading-md {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 31px;
+    margin-top: 19px;
+}
+ section#posts a.pull-right {
+    margin-right: 50px;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+strong {
+    font-size: 12px;
+}
+/* driver pool avilability*/
+section#driverpool h2.heading-sm {
+    font-size: 12px;
+    border: 0;
+}
+span.extra {
+    margin-left: 27%;
+}
+span.small button.btn-u.btn-u-dark {
+    margin-left: 12px;
+}
+section#Driver-verification-check label.radio {
+    margin-right: 0;
+}section#checks a {
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+}
+section#Driver-verification-check a {
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+}
+section#Vechicle-check button.btn-u {
+    margin-left: 24%;
+}
