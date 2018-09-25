@@ -1,5 +1,3 @@
-/* Add here all your css styles (customizations) */
-ul.nav.navbar-nav {
     margin-right: 73px;
 }
 .btn-u.btn-u-yellow {
@@ -54,7 +52,7 @@ section#Hows h4 {
 section#Hows p {
     text-align: center;
 }
-section#Hows h1 {
+section#Howss h1 {
     text-align: center;
     font-weight: bolder;
 }
@@ -140,7 +138,7 @@ span.maore {
     color: inherit;
     display: block;
     font-size: 20px;
-    background: rgba(128, 128, 128, 0.38);
+    background: transparent;
     font-weight: 400;
     padding: 8px 30px;
 }
@@ -347,18 +345,203 @@ span.extra {
 span.small button.btn-u.btn-u-dark {
     margin-left: 12px;
 }
-section#Driver-verification-check label.radio {
-    margin-right: 0;
-}section#checks a {
+
+
+/* driver pool*/
+
+.content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section#driverdetail img.img-circular {
+    width: 122px;
+    height: 110px;
+    margin-top: 27px;
+    margin-left: -50%;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: -50%;
+}
+ul.driverss {
+    list-style-type: none;
+}
+ul.driverss li.left {
+    float: left;
+    margin-left: 40px;
+}
+section#driverdetail .col-md-9.col-lg-9.col-sm-12.col-xs-12 {
+    background: #b6bbb140;
+    
+}
+.tag-box-v2 {
+    background: #fafafa;
+    border: solid 1px #eee;
+    /* border-left: solid 2px #72c02c; */
+    margin-top: 15px;
+    border-radius:10px;
+}
+.view button.btn-d {
+    margin-top: 40px;
+    background: #31ce3d;
+    color: #fff;
+    width: 90px;
+    height: 37px;
+    border-radius: 7px;
+    border:0;
+}
+span.cancel button.btn-d {
+    margin-top: 22px;
+    
+    background: #31ce3d;
+    color: #fff;
+    width: 90px;
+    height: 37px;
+    border-radius: 7px;
+}
+.map iframe {
+    width: 100%;
+    height: auto;
+}
+span.top button.btn-d{
+    margin-top: 40px;
+    background: #31ce3d;
+    color: #fff;
+    width: 90px;
+    height: 37px;
+    border-radius: 7px;
+    border:0;
+}
+span.time {
+    margin-left: 29px;
+}
+
+
+/*driver details*/
+section#formss .row.sky-space-30 {
+    padding-bottom: 20px;
+}
+section#formss button.btn-u {
+    margin-top: 12px;
+}
+section#driverdetails .col-md-9.col-lg-9.col-sm-12.col-xs-12 {
     background: transparent;
-    color: #000;
+}
+section#driverdetails img.img-circular {
+    width: 166px;
+    height: 163px;
+    margin-top: 27px;
+    /* margin-left: -50%; */
+    overflow: hidden;
+    border-radius: 50%;
+    /* margin-right: -50%; */
+
+}
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+    margin-top: 22px;
+    
+    border-radius: 10px;
+}
+section#driverdetails {
+    padding: 50px 0px;
+}
+section#driverdetails {
+    padding: 50px 0px;
+    background: #dae0df;
+}
+section#driverdetails .row {
+    background: #fff;
+    border-radius: 10px;
+}
+.driver-detailess .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 0px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top:0px;
+}
+
+/* driver Dashboard*/
+
+section#dashboard img.img-responsive {
+    width: 122px;
+    height: 110px;
+    border-radius: 50%;
+}
+span.Edit {
+    margin-left: 13px;
+}
+span.Edit a {
+    margin-left: 13px;
     text-decoration: none;
 }
-section#Driver-verification-check a {
-    background: transparent;
-    color: #000;
-    text-decoration: none;
+section#dashboard {
+    margin-left: 179px;
 }
-section#Vechicle-check button.btn-u {
-    margin-left: 24%;
+section#dashboard .profile .profile-body {
+    padding: 20px;
+    background: transparent;
+}
+div#profile {
+    border: 0;
+}
+ul.texxt {
+    list-style-type: none;
+}
+.profile .profile-edit {
+    padding: 0;
+    background: #fff;
+}
+section#dashboard .sky-form .input input, .sky-form .select select, .sky-form .textarea textarea, .sky-form .radio i, .sky-form .checkbox i, .sky-form .toggle i, .sky-form .icon-append, .sky-form .icon-prepend {
+    border-color: #f0f0f0;
+}
+
+span.ss a {
+    margin-left: 777px;
+    color: #240de6;
+    text-decoration: none;
+    font-size: 15px;
+}
+div#MyInformation h3 {
+    font-size: 12px;
+    font-weight: bold;
+}
+table.table {
+    border: 1px solid #f0f0f0;
+    margin-top: 50px
+}
+ul.risus {
+    list-style-type: none;
+    margin-left: 312px;
+}
+
+ul.risus li {
+    float: left;
+    margin-left: 50px;
+}
+h5.en {
+    margin-top: 38px;
+    font-weight: bold;
+}
+ul.nav.navbar-nav {
+    margin-right: 73px;
+}
+section#contact form#sky-form3 {
+    box-shadow: none;
+}
+
+
+/* media*/
+@media (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+  
+section#Hows i {
+    font-size: 25px;
+    margin-left: 137px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 100%;
+}
+  
 }
