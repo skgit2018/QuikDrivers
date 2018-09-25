@@ -103,14 +103,7 @@ if (Session::has('userdata')) {
                            </li>
                            <!-- End Blog -->
                            <!-- Portfolio -->
-                           <li>
-                              <a href="" class="dropdown-toggle">
-                              <span class="item">
-                              <i class="fa fa-car"></i>
-                              &nbsp;Our Vechicles
-                              </span>
-                              </a>
-                           </li>
+                           
                            <!-- End Portfolio -->
                            <!-- Features -->
                            <li>
@@ -133,7 +126,7 @@ if (Session::has('userdata')) {
                            </li>
                            <!-- End Shortcodes -->
                            <li>
-                              <button class="btn-u btn-u-yellow" type="button">Become a Driver</button>
+                              <button class="btn-u btn-u-dark" type="button">Become a Driver</button>
                               <!--<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
                                  <button class="btn-u btn-u-yellow" type="button">Became a Driver</button>
                                  </a>-->

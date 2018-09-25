@@ -8,7 +8,7 @@
       <!--[if !IE]><!--> 
       <html lang="en">
          <!--<![endif]-->
-         
+         <!-- Mirrored from htmlstream.com/preview/unify-v1.9.6/feature_header_v1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Oct 2016 11:39:25 GMT -->
          <head>
             <title>Quikdrivers</title>
             <!-- Meta -->
@@ -38,19 +38,19 @@
             <link rel="stylesheet" href="assets/css/theme-skins/dark.css">
             <!-- CSS Customization -->
             <link rel="stylesheet" href="assets/css/custom.css">
+            <link rel="stylesheet" href="assets/css/meadia.css">
          </head>
          <body>
             <div class="wrapper">
-
-                  <?php echo $__env->make('inc.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-                  
+      <?php echo $__env->make('inc.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <!--=== End Header v1 ===-->
             <!--=== Slider ===-->
             <section id="home-slider">
                <div class="slider-inner">
                   <div id="da-slider" class="da-slider">
                      <div class="da-slide">
                         <h2><i>PLEASE &amp;</i> <br /> <i>SIGN UP HERE</i> </h2>
-                        <button class="btn-u btn-u-green" type="button"><a href="/signup">SIGN UP HERE</a></button>
+                        <button class="btn-u btn-u-green" type="button"><a href="signup1.html">SIGN UP HERE</a></button>
                         <div class="da-img"><img class="img-responsive" src="assets/plugins/parallax-slider/img/car4.png" alt=""></div>
                      </div>
                      <div class="da-slide">
@@ -146,49 +146,81 @@
             </section>
             <br />
             <!--=== End About Section===-->
-            <section id="Hows">
+            <hr>
+            <section id="Howss">
                <h1>How It Work's</h1>
-               <!--=== Content Part ===-->
-               <div class="container content-sm">
-                  <!-- Service Blocks -->
-                  <div class="row margin-bottom-30">
-                     <div class="col-md-3">
-                        <div class="service">
-                           <i class="fa fa-home"></i>
-                           <div class="desc">
-                              <h4>Book In Just 2 tabs</h4>
-                              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-3">
-                        <div class="service">
-                           <i class="fa fa-user"></i>
-                           <div class="desc">
-                              <h4>Get a Driver</h4>
-                              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-3">
-                        <div class="service">
-                           <i class="fa fa-car"></i>
-                           <div class="desc">
-                              <h4>Track Your Driver</h4>
-                              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-3">
-                        <div class="service">
-                           <i class="fa fa-map-marker"></i>
-                           <div class="desc">
-                              <h4>Arrive Safely</h4>
-                              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
-                           </div>
-                        </div>
-                     </div>
+<div class="container content">
+         <div class="row">
+            <div class="col-md-3 md-margin-bottom-50">
+               <!-- Our Services -->
+               <div class="service-block service-block-blue">
+                  <i class="icon-custom icon-color-light rounded-x icon-line icon-home"></i>
+                  <h2 class="heading-md">Book in Just 2 tabs</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine usce dapibus elit nondapibus</p>
+               </div>
+               <!-- End Our Services -->
+
+               
+
+
+               <!-- Recent Works -->
+               <div class="owl-carousel-v1 owl-work-v1 margin-bottom-40">
+                 
+
+                  <div class="owl-recent-works-v1">
+                  
+                   
+                  
+                
                   </div>
+               </div>
+               <!-- End Recent Works -->
+            </div><!--/col-md-4-->
+
+            <div class="col-md-3 md-margin-bottom-50">
+               <!-- Our Services -->
+               <div class="service-block service-block-u">
+                  <i class="icon-custom icon-color-light rounded-x fa fa-user"></i>
+                  <h2 class="heading-md">Get a Driver</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine. Fusce dapibus</p>
+               </div>
+               <!-- End Our Services -->
+
+               
+  
+               <!--End Testimonials Block-->
+            </div><!--/col-md-4-->
+
+            <div class="col-md-3 md-margin-bottom-50">
+               <!-- Our Services -->
+               <div class="service-block service-block-red">
+                  <i class="icon-custom icon-color-light rounded-x fa fa-car"></i>
+                  <h2 class="heading-md">Track Your Driver</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine usce dapibus elit nondapibus</p>
+               </div>
+              
+
+              
+
+             
+            </div><!--/col-md-4-->
+                <div class="col-md-3 md-margin-bottom-50">
+               <!-- Our Services -->
+               <div class="service-block service-block-red">
+                  <i class="icon-custom icon-color-light rounded-x fa fa-map-marker"></i>
+                  <h2 class="heading-md">Arrive Safely</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine usce dapibus elit nondapibus</p>
+               </div>
+              
+
+              
+
+             
+            </div><!--/col-md-4-->
+         </div><!--/row-->
+
+
+      </div><!--/container-->
             </section>
             <section id="comming soon">
             <div class="bg-grey content-sm">
@@ -307,7 +339,123 @@
             </div>
             <!--=== End Team v4 ===-->
             </section>
-           <?php echo $__env->make('inc.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <section id="main-foot">
+            <!--=== Footer v1 ===-->
+            <div id="footer-v1" class="footer-v1">
+            <div class="footer">
+            <div class="container">
+            <div class="row">
+            <!-- About -->
+            <div class="col-md-3 md-margin-bottom-40">
+            <a href="index-2.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a>
+            <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+            <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
+            </div>
+            <!-- End About -->
+            <!-- Latest -->
+            <div class="col-md-3 md-margin-bottom-40">
+            <div class="posts">
+            <div class="headline"><h2>Latest Posts</h2></div>
+            <ul class="list-unstyled latest-list">
+            <li>
+            <a href="#">Incredible content</a>
+            <small>May 8, 2014</small>
+            </li>
+            <li>
+            <a href="#">Best shoots</a>
+            <small>June 23, 2014</small>
+            </li>
+            <li>
+            <a href="#">New Terms and Conditions</a>
+            <small>September 15, 2014</small>
+            </li>
+            </ul>
+            </div>
+            </div>
+            <!-- End Latest -->
+            <!-- Link List -->
+            <div class="col-md-3 md-margin-bottom-40">
+            <div class="headline"><h2>Useful Links</h2></div>
+            <ul class="list-unstyled link-list">
+            <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
+            <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
+            <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
+            <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
+            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+            </ul>
+            </div>
+            <!-- End Link List -->
+            <!-- Address -->
+            <div class="col-md-3 map-img md-margin-bottom-40">
+            <div class="headline"><h2>Contact Us</h2></div>
+            <address class="md-margin-bottom-40">
+            25, Lorem Lis Street, Orange <br />
+            California, US <br />
+            Phone: 800 123 3456 <br />
+            Fax: 800 123 3456 <br />
+            Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
+            </address>
+            </div>
+            <!-- End Address -->
+            </div>
+            </div>
+            </div><!--/footer-->
+            <div class="copyright">
+            <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+            <p>
+            2015 &copy; All Rights Reserved.
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </p>
+            </div>
+            <!-- Social Links -->
+            <div class="col-md-6">
+            <ul class="footer-socials list-inline">
+            <li>
+            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+            <i class="fa fa-facebook"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+            <i class="fa fa-skype"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+            <i class="fa fa-google-plus"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+            <i class="fa fa-linkedin"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+            <i class="fa fa-pinterest"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+            <i class="fa fa-twitter"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+            <i class="fa fa-dribbble"></i>
+            </a>
+            </li>
+            </ul>
+            </div>
+            <!-- End Social Links -->
+            </div>
+            </div>
+            </div><!--/copyright-->
+            </div>
+            <!--=== End Footer v1 ===-->
+            </section>
             </div>
             <!--/wrapper-->
             <!-- JS Global Compulsory -->
