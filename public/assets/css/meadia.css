@@ -1,0 +1,12 @@
+@media (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+  
+section#Hows i {
+    font-size: 25px;
+    margin-left: 137px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 100%;
+}
+  
+}
