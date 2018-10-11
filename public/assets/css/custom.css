@@ -1,9 +1,11 @@
-    margin-right: 73px;
-}
+
 .btn-u.btn-u-yellow {
     background: #5fb611;
     padding: 7px;
     width: 128px;
+}
+ul.nav.navbar-nav {
+    margin-right: 73px;
 }
 
 button.btn-u.btn-u-yellow:hover {
@@ -311,6 +313,28 @@ section.change {
     color: #fff;
     text-decoration: none;
 }
+
+
+.bootstrap-datetimepicker-widget .picker-switch td span {
+    line-height: 2.5;
+    height: 2.5em;
+    width: 100%;
+    background: #337ab7;
+    color: #fff;
+}
+section#bookingForm .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2 {
+    background: #0e385dcf;
+    border-radius: 8px;
+}
+section#bookingForm h4 {
+    color: #fff;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 26px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 /* search results */
 
 div#profile {
@@ -417,131 +441,311 @@ span.time {
 }
 
 
+
 /*driver details*/
-section#formss .row.sky-space-30 {
-    padding-bottom: 20px;
-}
-section#formss button.btn-u {
-    margin-top: 12px;
-}
-section#driverdetails .col-md-9.col-lg-9.col-sm-12.col-xs-12 {
+
+a.btn.btn-info.btn-lgs {
+    margin-left: 180px;
     background: transparent;
-}
-section#driverdetails img.img-circular {
-    width: 166px;
-    height: 163px;
-    margin-top: 27px;
-    /* margin-left: -50%; */
-    overflow: hidden;
-    border-radius: 50%;
-    /* margin-right: -50%; */
-
-}
-.table-responsive {
-    min-height: .01%;
-    overflow-x: auto;
-    margin-top: 22px;
-    
-    border-radius: 10px;
-}
-section#driverdetails {
-    padding: 50px 0px;
-}
-section#driverdetails {
-    padding: 50px 0px;
-    background: #dae0df;
-}
-section#driverdetails .row {
-    background: #fff;
-    border-radius: 10px;
-}
-.driver-detailess .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
-    padding: 0px;
-    line-height: 1.42857143;
-    vertical-align: top;
-    border-top:0px;
-}
-
-/* driver Dashboard*/
-
-section#dashboard img.img-responsive {
-    width: 122px;
-    height: 110px;
-    border-radius: 50%;
-}
-span.Edit {
-    margin-left: 13px;
-}
-span.Edit a {
-    margin-left: 13px;
-    text-decoration: none;
-}
-section#dashboard {
-    margin-left: 179px;
-}
-section#dashboard .profile .profile-body {
-    padding: 20px;
-    background: transparent;
-}
-div#profile {
     border: 0;
-}
-ul.texxt {
-    list-style-type: none;
-}
-.profile .profile-edit {
-    padding: 0;
-    background: #fff;
-}
-section#dashboard .sky-form .input input, .sky-form .select select, .sky-form .textarea textarea, .sky-form .radio i, .sky-form .checkbox i, .sky-form .toggle i, .sky-form .icon-append, .sky-form .icon-prepend {
-    border-color: #f0f0f0;
+    color: #fff;
 }
 
-span.ss a {
-    margin-left: 777px;
-    color: #240de6;
-    text-decoration: none;
-    font-size: 15px;
+
+
+
+section#comments form#sky-form3 {
+    box-shadow: none;
 }
-div#MyInformation h3 {
-    font-size: 12px;
-    font-weight: bold;
-}
-table.table {
+.tabled {
     border: 1px solid #f0f0f0;
-    margin-top: 50px
 }
-ul.risus {
-    list-style-type: none;
-    margin-left: 312px;
+section#Dashboard .profile-body {
+    margin-top: 15px;
+}
+h2.margi {
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+span.chamge img.img-responsive.md-margin-bottom-10 {
+    width: 261px;
+    border-radius:5px;
 }
 
-ul.risus li {
-    float: left;
-    margin-left: 50px;
+section#settingss form#sky-form4 {
+    box-shadow: none;
 }
-h5.en {
-    margin-top: 38px;
+ section#settingss form#sky-form {
+    box-shadow: none;
+}
+section#settingss form#sky-form3 {
+     box-shadow: none;  
+}
+.p h2 {
+    text-align: center;
     font-weight: bold;
+    background: #269abc;
+    color: #fff;
+    border-radius: 8px;
 }
-ul.nav.navbar-nav {
-    margin-right: 73px;
+section#Dashboard .content {
+    
+    padding-bottom: 24px;
 }
-section#contact form#sky-form3 {
+div#concep {
+    margin-top: 15px;
+}
+
+/*driver dashprofile */
+section#contactsd form#sky-form {
     box-shadow: none;
 }
 
-
-/* media*/
-@media (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
-  
-section#Hows i {
-    font-size: 25px;
-    margin-left: 137px;
-    background: #fff;
-    padding: 10px;
-    border: 1px solid;
-    border-radius: 100%;
+section#commentss .bg-color-light {
+    background-color: transparent;
 }
-  
+section#commentss form#sky-form3 {
+    border: 15px solid #f0f0f0;
+    background: #f0f0f0;
+}
+section#commentss .col-md-6 {
+    margin-top: 10px;
+    width: 49%;
+    margin-left: 10px;
+}
+div#concep .panel-heading {
+    background: #269abc;
+    color: #fff;
+}
+div#concep .panel-red {
+    border-color: #269abc;
+}
+
+
+/* rides */
+span.dee button.btn-u.btn-u-dark {
+    margin-left: 680px;
+    margin-top: 10px;
+}
+section#usersp .profile-body {
+    margin-top: 15px;
+}
+
+.de button.btn-u.btn-u-dark {
+    margin-left: 379px;
+    margin-top: 10px;
+}
+
+/* bookingsqdm*/
+section#qdmbooking .col-md-9.col-lg-9.col-sm-12.col-xs-12 {
+    background: transparent;
+}
+section#qdmbooking h2.panel-title.heading-sm.pull-left {
+    color: #fff;
+}
+.ex {
+   
+    margin-top: 15px;
+}
+.y h2.panel-title.heading-sm.pull-left {
+    background: transparent;
+    padding: 10px;
+    font-weight: bold;
+}
+
+section#daters .panel-heading {
+    background: #2ecc71;
+    color: #fff;
+}
+.support .panel-heading {
+    background: #1abc9c;
+    color: #fff;
+}
+.expert .panel-heading {
+    background: #499e26;
+    color: #fff;
+}
+.expert .panel-sea{
+    border-color: #499e26;
+}
+.profile .table {
+    background: #fff;
+    display: block;
+    max-height: 200px;
+    overflow-x: auto;
+    
+}
+section#qdmbookings .panel-heading.overflow-h {
+    background: #269abc;
+}
+
+
+
+section#user-comments img.media-object.rounded-x {
+    width: 43px;
+}
+section#projects .profile-body {
+    margin-top: 15px;
+}
+td.td-width {
+    width: 100px;
+}
+section#driverdetail h2.panel-title.heading-sm.pull-left {
+    color: #000;
+}
+section#bookingForm .sky-form a {
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+}
+section#driverdetail img.rounded-x {
+    width: 100px;
+}
+.commet a.accordion-toggle {
+    color: #fff;
+}
+.commet a.accordion-toggle i.fa.fa-comments {
+    color: #fff;
+}
+div#concep h2 {
+    font-size: 13px;
+}
+div#concep h3 {
+    font-size: 13px;
+}
+section#commentss h2.margin-bottom-20 {
+    background: #269abc;
+    color: #fff;
+    font-size: 15px;
+}
+section#commentss .col-md-12 {
+    margin-top: 10px;
+}
+section#usersp .profile .panel-heading {
+    color: #fff;
+    background: #269abc;
+    padding: 7px 15px;
+    border-bottom: solid 3px #f7f7f7;
+    border-radius: 8px;
+}
+div#Pay .panel-heading.overflow-h {
+    color: #fff;
+    background: #269abc;
+}
+section#nn .panel-heading {
+    background: #269abc;
+    color: #fff;
+}
+section#nn .panel-red {
+    border-color: #269abc;
+}
+section#qdmbooking .panel-heading.overflow-h {
+    background: #269abc;
+}
+section#nn .profile-body {
+    margin-top: 15px;
+}
+.page h2 {
+    background: #1abc9c;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+section#Dashboard .service-block-v3 .counter {
+    display: block;
+    line-height: 1;
+    font-size: 30px;
+    margin-left: 70px;
+}
+.support h2.panel-title.heading-sm.pull-left {
+    color: #fff;
+}
+span.pull-right i.fa.fa-plus {
+    color: #fff;
+}
+h2.panel-title.heading-sm.pull-left {
+    color: #fff;
+}
+.profile .profile-body {
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 8px;
+}
+.profile .table {
+    background: #fff;
+    display: block;
+    max-height: 200px;
+    overflow-x: auto;
+   
+}
+div#concep .panel-heading {
+    background: #269abc;
+    color: #fff;
+    border-radius: 8px;
+}
+.panel-green {
+    border-color: transparent;
+}
+
+.panel, .panel-heading, .panel-group .panel {
+    border-radius: 0;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.service-block-u {
+    background: #72c02c;
+    border-radius: 8px;
+}
+.service-block-blue {
+    background: #3498db;
+    border-radius: 8px;
+}
+
+section#bookingForm {
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+ul.deatilsdrivers {
+    list-style-type: none;
+}
+ul.deatilsdrivers li {
+    margin-top: 10px;
+}
+section#driverdetail .row {
+   border-radius: 8px;
+    box-shadow: 0px 2px 5px #555;
+    background: #f9f9f9;
+    
+}
+ul.deatilsdrivers button.btn-u.btn-u-dark {
+    border-radius: 5px;
+    background:#004CA3;
+
+}
+ul.deatilsdrivers button.btn-u.btn-u-dark:hover {
+    background: #fff;
+    border: 2px solid #004CA3;
+     color: #004CA3;
+}
+
+
+
+ul.result {
+    list-style-type: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px #555;
+    background: #f9f9f9;
+}
+ul.result li {
+    float: left;
 }
