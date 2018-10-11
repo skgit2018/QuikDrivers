@@ -8,8 +8,8 @@ use App\Booking;
 class BookingController extends Controller
 {
     public function Booking(Request $request){
-
-        $user = new Booking;
+       
+       /* $user = new Booking;
 
         //Fetch The Data
         $user->Search_user_id = 1;
@@ -21,7 +21,7 @@ class BookingController extends Controller
         $user->save();
 
 
-        return redirect('/booking/user');
+        return redirect('/searchresults');*/
 
     }
 }
