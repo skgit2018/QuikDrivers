@@ -57,14 +57,14 @@
 		</div>
 		<!--=== End Breadcrumbs v1 ===-->
 	</section>
-
-<section id="posts">
-			<!--=== Content Part ===-->
-		<div class="container content">
-			<div class="row">
-				<div class="col-md-12">
-                   <!-- Check the Session Data from Search Controller -->
-            <?php if(Session::has('search')){                
+<hr>
+<section id="driverdetail">
+<div class="y">
+                        <div class="panel-heading overflow-h">
+                        <h2 class="panel-title heading-sm pull-left">Driver Pool</h2></div>
+                    </div>
+<div class="container">
+<?php if(Session::has('search')){                
              $searchdata = Session::get('search');            
              foreach($searchdata as $sdata){
                  $driver_image = $sdata->reg_driver_image;
@@ -81,132 +81,97 @@
 
            
            ?>
+   <div class="row">
+   
 
-<div class="headline"><h2>Driver Profile</h2></div>
-
-<!-- Clients Block-->
-<div class="row clients-page">
-    <div class="col-md-2">
-    <img class="thumbnail" src="localhost:8000/public/storage/uploads/image.jpg">
-    </div>
-    <div class="col-md-10">
-   <button onclick="myFunction()">Driver Details</button>
-
-
-    <div id="profile" class="profile-edit tab-pane fade in active">
-                
-                
-                <br>
-                <dl class="dl-horizontal">
-                
-                    <dt class="st"><strong>Your Name </strong></dt>
-                    
-                    <dd>
-                   <?php 
-                   echo $driver_name = $driver_fname . " ". $driver_lname;
-                   ?>
-                       
-                    </dd>
-                    
-                    <dt><strong>Gender </strong></dt>
-                    <dd>
-                    <?php 
-                   echo $driver_gender = $sdata->reg_driver_gender;
-                   ?>
-                        <span>
-                           
-                        </span>
-                    </dd>
-                    
-                    <dt><strong>Address </strong></dt>
-                    <dd> 
-                     <?php 
-                   echo $driver_addr = $sdata->reg_driver_address;
-                   echo $driver_street = $sdata->reg_driver_street;
-                   echo $driver_loc = $sdata->reg_driver_location;
-                   echo $driver_city = $sdata->reg_driver_city;
-                   echo $driver_state = $sdata->reg_driver_state;
-                   ?>
-                        
-                    </dd>
-                    
-                    <!--<dt><strong>Street </strong></dt>
-                    <dd>
-                    <?php 
+        
+      
+     
+     <div class="col-md-2">
+      <img class="rounded-x" src="assets/img/testimonials/img1.jpg" alt="">
+     </div>
+    
+   <div class="col-md-4">
+   
+              <dl class="dl-horizontal">
+               <dt><strong>Your name:</strong></dt>
+               <dd>
+               <?php
+               echo $driver_name = $driver_fname . " ". $driver_lname;
+               ?>
                   
-                   ?>
-                       
-                    </dd>
-                    
-                    <dt><strong>Location </strong></dt>
-                    <dd>
-                    <?php 
-                   
-                   ?>
-                        
-                    </dd>
-                    
-                    <dt><strong>City </strong></dt>
-                    <dd>
-                    <?php 
-                   
-                   ?>
-                        
-                    </dd>
-                    
-                    <dt><strong>State </strong></dt>
-                    <dd>
-                    <?php 
-                   
-                   ?>
-                        
-                    </dd>-->
-                    
-                    <dt><strong>Experience </strong></dt>
-                    <dd>
-                    <?php 
-                   echo $driver_exp = $sdata->reg_driver_experience;
-                   ?>
-                        
-                    </dd>
-                </dl>
-                <!--<button type="button" class="btn-u btn-u-default">Cancel</button>
-                <button type="button" class="btn-u">Save Changes</button>-->
-
-            </div>
-
-    </div>
+               </dd>
+               
+               <dt><strong>Gender:</strong></dt>
+               <dd>
+               <?php
+               echo $driver_gender = $sdata->reg_driver_gender;
+               ?>
+                 
+               </dd>
+               
+               <dt><strong>Address:</strong></dt>
+               <dd>
+               <?php
+               echo $driver_addr = $sdata->reg_driver_address;
+               ?>
+                  
+               </dd>
+               
+               <dt><strong>City:</strong></dt>
+               <dd>
+               <?php
+               echo $driver_city = $sdata->reg_driver_city;
+               ?>
+                  
+               </dd>
+             
+               <dt><strong>Experience:</strong></dt>
+               <dd>
+               <?php
+               echo $driver_exp = $sdata->reg_driver_experience;
+               ?>
+                  
+               </dd>
+               
+               <dt><strong>State:</strong></dt>
+               <dd>
+               <?php
+               echo $driver_exp = $sdata->reg_driver_state;
+               ?>
+                 
+               </dd>
+              
+               <dt><strong></strong></dt>
+               <dd>
+                  
+                  
+               </dd>
+              
+            </dl>
+                  
+   </div>
+ 
+   
+   <div class="col-md-2">
+      <ul class="deatilsdrivers">
+      <li><button class="btn-u btn-u-dark" type="button">Book Now</button></li>
+      <li><button class="btn-u btn-u-dark" type="button">View More</button></li>
+   </ul>
+   </div>
+   
+  
+  
 </div>
-<!-- End Clients Block-->
+<br/>
 <?php }}?>
 
-
-
-
-
-<!-- Pagination -->
-<div class="text-center md-margin-bottom-30">
-    <ul class="pagination">
-        <li><a href="#">«</a></li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">»</a></li>
-    </ul>
 </div>
 
-<!-- End Pagination -->
-</div><!--/col-md-9-->
 
+</section>
 
-
-					
-	</section>
-
-
-
+<hr>
 	@include('inc.footer')          
 	 </div>
             <!--/wrapper-->
