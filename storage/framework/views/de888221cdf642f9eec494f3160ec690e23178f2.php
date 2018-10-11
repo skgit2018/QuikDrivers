@@ -19,9 +19,7 @@
             <!-- Favicon -->
             <link rel="shortcut icon" href="favicon.ico">
             <!-- Web Fonts -->
-            <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
-            <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=cyrillic,latin">
-            <script src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAP_API_KEY&libraries=places®ion=in"></script>
+            <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
             <!-- CSS Global Compulsory -->
             <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
             <link rel="stylesheet" href="assets/css/style.css">
@@ -32,157 +30,135 @@
             <link rel="stylesheet" href="assets/plugins/animate.css">
             <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
             <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-            <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css">
-            <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
-            <link rel="stylesheet" href="assets/plugins/fancybox/source/jquery.fancybox.css">
-            <link rel="stylesheet" href="assets/plugins/brand-buttons/brand-buttons.css">
-            <!-- CSS Page-->
-            <link rel="stylesheet" href="assets/css/pages/page_log_reg_v4.css">
-           
+            <link rel="stylesheet" href="assets/plugins/scrollbar/css/jquery.mCustomScrollbar.css">
+            <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+            <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+            <!-- CSS Page Style -->
+            <link rel="stylesheet" href="assets/css/pages/profile.css">
             <!-- CSS Theme -->
             <link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
             <link rel="stylesheet" href="assets/css/theme-skins/dark.css">
             <!-- CSS Customization -->
             <link rel="stylesheet" href="assets/css/custom.css">
+            <!-- Date Time Picker Css & Js -->
+            <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.min.css" />
+            <link href="assets/css/datetimepicker.css" rel="stylesheet">
+            <script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
+            <script src="assets/js/moment-with-locales.js"></script>
+            <script src="assets/js/datetimepicker.js"></script> 
          </head>
          <body>
             <div class="wrapper">
                <!--=== Header v1 ===-->
-               <?php echo $__env->make('inc.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>               </div>
-               <!--=== End Header v1 ===-->
-               <section id="booking-form">
-               <div class="container-fluid">
-      <div class="row equal-height-columns">
-        
-
-         <div class="col-md-6 col-sm-6 form-block equal-height-column">
-            
-              
-            <h1 class="margin-bottom-30">SEARCH A DRIVER</h1>
-            <form action="#">
-               <div class="login-block">
+               <?php echo $__env->make('inc.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>               
+               <section id="bookingForm">
                   
-                  <div class="input-group margin-bottom-20">
-                     <span class="input-group-addon rounded-left"> <i class="fa fa-map-marker"></i></span>
-                     <input type="text" name="city" placeholder="Select Destination" class="form-control" value="<?php echo e(old('city')); ?>" id="city">
-                  </div>
-                  
+                  <!--=== Content Part ===-->
+            <div class="container content">
+            <?php echo Form::open(['url' => '/searchresults', 'method' =>'' ]); ?>
 
-                  <section class="margin">
-                          <div class="inline-group">
-                            <div class="headline"><h2 class="heading-sm">Time Duration</h2></div>
-                           <label class="radio"><input type="radio" name="radio-inline" checked><i class="rounded-x"></i>3HR</label>
-                           <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>6HR</label>
-                           <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>12HR</label>
-                           <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>24HR</label>
-                           
+               <div class="row">
+                  <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                     <form class="reg-page">
+                        <div class="reg-header">
+                           <h4>SEARCH A DRIVER</h4>
                         </div>
+      
+                     
+      
+                        <label>Location<span class="color-red">*</span></label>
+                        <input type="text" class="form-control margin-bottom-20" placeholder="Enter Your Location">
+      
+                        <div class="row">
+                           <div class="col-sm-6">
+                              <label>Form Date & Time<span class="color-red">*</span></label>
+                                 <div class="login-block">
+                                    <div class="input-group margin-bottom-20">
+                                       <div class='input-group date' id='datetimepicker1'>
+                                          <input type='text' class="form-control"  placeholder="Select Date & Time" />
+                                          <span class="input-group-addon">
+                                          <span class="glyphicon glyphicon-calendar"></span>
+                                          </span>
+                                       </div>
+                                    </div>
+                                 </div>
+                           </div>
+                           <div class="col-sm-6">
+                             <label>To date & Time<span class="color-red">*</span></label>
+                                 <div class="login-block">
+                                    <div class="input-group margin-bottom-20">
+                                       <div class='input-group date' id='datetimepicker2'>
+                                          <input type='text' class="form-control"  placeholder="Select Date & Time" />
+                                          <span class="input-group-addon">
+                                          <span class="glyphicon glyphicon-calendar"></span>
+                                          </span>
+                                       </div>
+                                    </div>
+                                 </div>
+                           </div>
+                        </div>
+      
+                        <hr>
+      
+                        <div class="row">
+                           <div class="col-lg-6 checkbox">
+                             
+                           </div>
+                           <div class="col-lg-6 text-right">
+                              <button class="btn-u" type="submit">Search</button>
+                           </div>
+                        </div>
+                        <?php echo Form::close(); ?>
+
+                  </div>
+               </div>
+            </div><!--/container-->
+            <!--=== End Content Part ===-->
                      </section>
-                  <br>
-                 
-                  <div class="headline"><h2 class="heading-sm">Payment Method</h2></div>
-                  <div class="row brand-page margin-bottom-40">
-                  <div class="col-sm-6 col-md-4">
-                     <button class="btn btn-block btn-bitcoin">
-                        Cash
-                     </button>
-                  </div>
-                  <div class="col-sm-6 col-md-4">
-                     <button class="btn btn-block btn-cloudapp">
-                        NETBANKING
-                     </button>
-                  </div>
-                  <div class="col-sm-6 col-md-4">
-                     <button class="btn btn-block btn-creativecommons">
-                        DEBIT/CREDIT CARD
-                     </button>
-                  </div>
-               </div>
-               <div class="headline"><h2 class="heading-sm">Select Car</h2>
-                  <input type="text" class="form-control rounded-right" placeholder="Select your Car">
-                         <!--<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h2 class="heading-sm">Select Car</h2> <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">BMW</a></li>
-            <li><a href="#">Dodge Viper</a></li>
-            <li><a href="#">Cadillac</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Ferrari</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#"> Audi</a></li>
-          </ul>
-        </li>-->
-        </div>
-                      
-                    
 
-              
-               </div>
-               <span class="black"><button class="btn-u btn-u-dark" type="button">Book Now</button></span>
-            </form>
-            <script type="text/javascript">
-		function initialize() {
-		    var options = {
-		        types: ['(cities)'],
-		        componentRestrictions: {country: "in"}
-		    };
-		    var input = document.getElementById('city');
-		    var autocomplete = new google.maps.places.Autocomplete(input, options);
-		}
-		google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
-
-         </div>
-          <div class="col-md-6 col-sm-6 hidden-xs image-block equal-height-column">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.7075492876015!2d78.5306753144394!3d17.42581698805559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb996344a6fff9%3A0x6e0daad0531ea482!2sTarnaka!5e0!3m2!1sen!2sin!4v1536643876793" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-      </div>
-   </div><!--/container-->
-               </section>
                <br/>
                <?php echo $__env->make('inc.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>           
                </div>
             <!--/wrapper-->
-            <!-- JS Global Compulsory -->
-            <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+          <!-- JS Global Compulsory -->
+            <!-- <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script> -->
             <script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
             <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <!-- JS Implementing Plugins -->
             <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
             <script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
-            <script src="assets/plugins/backstretch/jquery.backstretch.min.js"></script>
             <script type="text/javascript" src="assets/plugins/counter/waypoints.min.js"></script>
             <script type="text/javascript" src="assets/plugins/counter/jquery.counterup.min.js"></script>
-            <script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
-            <!--Slider JS -->
-            <script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
-            <script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
-            <script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
-            <script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
+            <script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
+            <script type="text/javascript" src="assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
             <!-- JS Customization -->
-            <script src="assets/js/custom.js"></script>t>
+            <script type="text/javascript" src="assets/js/custom.js"></script>
             <!-- JS Page Level -->
             <script type="text/javascript" src="assets/js/app.js"></script>
-            <script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
-            <script type="text/javascript" src="assets/js/plugins/parallax-slider.js"></script>
-           <script src="assets/js/app.js"></script>
-   <script>
-      jQuery(document).ready(function() {
-         App.init();
-         StyleSwitcher.initStyleSwitcher();
-      });
-   </script>
-   <script>
-      $(".forms-wrapper").backstretch([
-         "assets/img/bg/6.jpg",
-         "assets/img/bg/5.jpg",
-         "assets/img/bg/7.jpg",
-         ], {
-            fade: 1000,
-            duration: 7000
-         });
-   </script>
+            <!-- <script type="text/javascript" src="assets/js/plugins/datepicker.js"></script> -->
+            <!-- <script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script> -->
+            <script type="text/javascript">
+               jQuery(document).ready(function() {
+                  App.init();
+                  App.initCounter();
+                  App.initScrollBar();
+                  //Datepicker.initDatepicker();
+                  //StyleSwitcher.initStyleSwitcher();
+               });
+            </script>
+            <!--[if lt IE 9]>
+            <script src="assets/plugins/respond.js"></script>
+            <script src="assets/plugins/html5shiv.js"></script>
+            <script src="assets/plugins/placeholder-IE-fixes.js"></script>
+            <![endif]-->
+            <script type="text/javascript">
+               $(function () {
+                   $('#datetimepicker1').datetimepicker();
+               });
+               $(function () {
+                   $('#datetimepicker2').datetimepicker();
+               });
+            </script>
             <!--[if lt IE 9]>
             <script src="assets/plugins/respond.js"></script>
             <script src="assets/plugins/html5shiv.js"></script>
