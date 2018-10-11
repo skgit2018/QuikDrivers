@@ -29,6 +29,19 @@ Route::get('/logout', 'LogoutController@Logout');
 Route::get('/searchresults', 'PagesController@getsearch');
 Route::get('/driverdetails', 'PagesController@getdriver');
 Route::get('/qdmsearch', 'PagesController@getresults');
+Route::get('/conformbooking', 'PagesController@getcbooking');
+Route::get('/customerdashboard', 'PagesController@getcdashboard');
+Route::get('/customerprofile', 'PagesController@getcprofile');
+Route::get('/customerrides', 'PagesController@getcrides');
+Route::get('/customersettings', 'PagesController@getcsettings');
+Route::get('/customerpayments', 'PagesController@getcpayments');
+Route::get('/driverdashboard', 'PagesController@getddashboard');
+Route::get('/driverresults', 'PagesController@getdresults');
+Route::get('/qdbooking', 'PagesController@getqdbook');
+Route::get('/driverpayments', 'PagesController@getdpayments');
+Route::get('/driverrides', 'PagesController@getdrides');
+Route::get('/driversettings', 'PagesController@getdsettings');
+Route::get('/driverprofile', 'PagesController@getdprofile');
 
 
 Route::post('/customer/info', 'CustomerController@Customer');
@@ -40,6 +53,7 @@ Route::post('/signup/create', 'SignupController@createUser');
 Route::post('/signin/user', 'SigninController@userLogin');
 Route::post('/checkotp', 'OtpVerificationController@VerifyOtp');
 Route::get('/search', 'SearchController@SearchResults');
+Route::get('/driverprofiles', 'DriverProfileController@DriverProfile');
 Route::post('/vehicle/info', 'VehicleController@Vehicle_info');
 Route::post('/driver/pool', 'DriverPoolController@Driverpool');
 Route::post('/booking/user', 'BookingController@Booking');
