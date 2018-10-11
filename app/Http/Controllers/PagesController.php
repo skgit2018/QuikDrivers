@@ -49,7 +49,43 @@ class PagesController extends Controller
     public function getresults(){
         return view('qdmsearch');
     }
-
-    
-   
+    public function getcbooking(){
+        return view('conformbooking');
+    }
+    public function getcprofile(){
+        return view('customerprofile');
+    }
+    public function getcrides(){
+        return view('customerrides');
+    }
+    public function getcsettings(){
+        return view('customersettings');
+    } 
+    public function getcdashboard(){
+        return view('customerdashboard');
+    }  
+    public function getcpayments(){
+        return view('customerpayments');
+    }   
+    public function getddashboard(){
+        return view('driverdashboard');
+    }   
+    public function getdresults(){
+        return view('driverresults');
+    }   
+    public function getqdbook(){
+        return view('qdbooking');
+    }                    
+    public function getdpayments(){
+        return view('driverpayments');
+    }  
+    public function getdrides(){
+        return view('driverrides');
+    }   
+    public function getdsettings(){
+        return view('driversettings');
+    }    
+    public function getdprofile(){
+        return view('driverprofile');
+    }            
 }
