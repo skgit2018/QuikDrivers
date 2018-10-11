@@ -17,9 +17,7 @@ class SearchController extends Controller
      
      $search_data = DB::select("SELECT * FROM qdm_users INNER JOIN qdm_drivers_info ON qdm_users.reg_user_id = qdm_drivers_info.reg_user_id INNER JOIN qdm_driver_idverify ON qdm_users.reg_user_id = qdm_driver_idverify.reg_user_id INNER JOIN qdm_driver_bank_details ON qdm_users.reg_user_id = qdm_driver_bank_details.reg_user_id INNER JOIN qdm_driver_verify ON qdm_users.reg_user_id = qdm_driver_verify.reg_user_id INNER JOIN driver_reference ON qdm_users.reg_user_id = driver_reference.reg_user_id INNER JOIN driver_emergency ON qdm_users.reg_user_id = driver_emergency.reg_user_id AND qdm_users.reg_user_account_type = 'driver'");
 
-     echo "<pre>";
-     print_r($search_data);
-     echo "</pre>";
+     
 
      /*$driver_id = $search_data[0]->reg_user_id;
      $driver_fname = $search_data[0]->reg_driver_firstname;
