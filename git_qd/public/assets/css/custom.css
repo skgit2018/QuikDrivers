@@ -1,11 +1,11 @@
-/* Add here all your css styles (customizations) */
-ul.nav.navbar-nav {
-    margin-right: 73px;
-}
+
 .btn-u.btn-u-yellow {
     background: #5fb611;
     padding: 7px;
     width: 128px;
+}
+ul.nav.navbar-nav {
+    margin-right: 73px;
 }
 
 button.btn-u.btn-u-yellow:hover {
@@ -34,11 +34,18 @@ button.btn-u.btn-u-green:hover {
     /* font-family: verdana; */
 }
 /* how To work section*/
-section#Howss {
+section#Hows {
     background: #f0f0f091;
     padding: 30px 0px;
 }
-
+section#Hows i {
+    font-size: 25px;
+    margin-left: 95px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 100%;
+}
 section#Hows h4 {
     text-align: center;
     font-size: 15px;
@@ -133,7 +140,7 @@ span.maore {
     color: inherit;
     display: block;
     font-size: 20px;
-    background: rgba(128, 128, 128, 0.38);
+    background: transparent;
     font-weight: 400;
     padding: 8px 30px;
 }
@@ -141,7 +148,7 @@ div#sky-form {
     width: 70%;
     margin-left: 15%;
 }
-}
+
 footer.bt {
     margin-left: 78%;
 }
@@ -286,7 +293,7 @@ span.black .btn-u.btn-u-dark {
     position: relative;
     display: inline;
     
-    margin-bottom: 10px;
+    
     margin-left: 48px;
 }
 section.change {
@@ -305,6 +312,28 @@ section.change {
     padding: 5px;
     color: #fff;
     text-decoration: none;
+}
+
+
+.bootstrap-datetimepicker-widget .picker-switch td span {
+    line-height: 2.5;
+    height: 2.5em;
+    width: 100%;
+    background: #337ab7;
+    color: #fff;
+}
+section#bookingForm .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2 {
+    background: #0e385dcf;
+    border-radius: 8px;
+}
+section#bookingForm h4 {
+    color: #fff;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 26px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 /* search results */
 
@@ -340,18 +369,349 @@ span.extra {
 span.small button.btn-u.btn-u-dark {
     margin-left: 12px;
 }
-section#Driver-verification-check label.radio {
-    margin-right: 0;
-}section#checks a {
+
+
+/* driver pool*/
+
+.content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section#driverdetail img.img-circular {
+    width: 122px;
+    height: 110px;
+    margin-top: 27px;
+    margin-left: -50%;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: -50%;
+}
+ul.driverss {
+    list-style-type: none;
+}
+ul.driverss li.left {
+    float: left;
+    margin-left: 40px;
+}
+section#driverdetail .col-md-9.col-lg-9.col-sm-12.col-xs-12 {
+    background: #b6bbb140;
+    
+}
+.tag-box-v2 {
+    background: #fafafa;
+    border: solid 1px #eee;
+    /* border-left: solid 2px #72c02c; */
+    margin-top: 15px;
+    border-radius:10px;
+}
+.view button.btn-d {
+    margin-top: 40px;
+    background: #31ce3d;
+    color: #fff;
+    width: 90px;
+    height: 37px;
+    border-radius: 7px;
+    border:0;
+}
+span.cancel button.btn-d {
+    margin-top: 22px;
+    
+    background: #31ce3d;
+    color: #fff;
+    width: 90px;
+    height: 37px;
+    border-radius: 7px;
+}
+.map iframe {
+    width: 100%;
+    height: auto;
+}
+span.top button.btn-d{
+    margin-top: 40px;
+    background: #31ce3d;
+    color: #fff;
+    width: 90px;
+    height: 37px;
+    border-radius: 7px;
+    border:0;
+}
+span.time {
+    margin-left: 29px;
+}
+
+
+
+/*driver details*/
+
+a.btn.btn-info.btn-lgs {
+    margin-left: 180px;
+    background: transparent;
+    border: 0;
+    color: #fff;
+}
+
+
+
+
+section#comments form#sky-form3 {
+    box-shadow: none;
+}
+.tabled {
+    border: 1px solid #f0f0f0;
+}
+section#Dashboard .profile-body {
+    margin-top: 15px;
+}
+h2.margi {
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+span.chamge img.img-responsive.md-margin-bottom-10 {
+    width: 261px;
+    border-radius:5px;
+}
+
+section#settingss form#sky-form4 {
+    box-shadow: none;
+}
+ section#settingss form#sky-form {
+    box-shadow: none;
+}
+section#settingss form#sky-form3 {
+     box-shadow: none;  
+}
+.p h2 {
+    text-align: center;
+    font-weight: bold;
+    background: #269abc;
+    color: #fff;
+    border-radius: 8px;
+}
+section#Dashboard .content {
+    
+    padding-bottom: 24px;
+}
+div#concep {
+    margin-top: 15px;
+}
+
+/*driver dashprofile */
+section#contactsd form#sky-form {
+    box-shadow: none;
+}
+
+section#commentss .bg-color-light {
+    background-color: transparent;
+}
+section#commentss form#sky-form3 {
+    border: 15px solid #f0f0f0;
+    background: #f0f0f0;
+}
+section#commentss .col-md-6 {
+    margin-top: 10px;
+    width: 49%;
+    margin-left: 10px;
+}
+div#concep .panel-heading {
+    background: #269abc;
+    color: #fff;
+}
+div#concep .panel-red {
+    border-color: #269abc;
+}
+
+
+/* rides */
+span.dee button.btn-u.btn-u-dark {
+    margin-left: 680px;
+    margin-top: 10px;
+}
+section#usersp .profile-body {
+    margin-top: 15px;
+}
+
+.de button.btn-u.btn-u-dark {
+    margin-left: 379px;
+    margin-top: 10px;
+}
+
+/* bookingsqdm*/
+section#qdmbooking .col-md-9.col-lg-9.col-sm-12.col-xs-12 {
+    background: transparent;
+}
+section#qdmbooking h2.panel-title.heading-sm.pull-left {
+    color: #fff;
+}
+.ex {
+   
+    margin-top: 15px;
+}
+.y h2.panel-title.heading-sm.pull-left {
+    background: transparent;
+    padding: 10px;
+    font-weight: bold;
+}
+
+section#daters .panel-heading {
+    background: #2ecc71;
+    color: #fff;
+}
+.support .panel-heading {
+    background: #1abc9c;
+    color: #fff;
+}
+.expert .panel-heading {
+    background: #499e26;
+    color: #fff;
+}
+.expert .panel-sea{
+    border-color: #499e26;
+}
+.profile .table {
+    background: #fff;
+    display: block;
+    max-height: 200px;
+    overflow-x: auto;
+    
+}
+section#qdmbookings .panel-heading.overflow-h {
+    background: #269abc;
+}
+
+
+
+section#user-comments img.media-object.rounded-x {
+    width: 43px;
+}
+section#projects .profile-body {
+    margin-top: 15px;
+}
+td.td-width {
+    width: 100px;
+}
+section#driverdetail h2.panel-title.heading-sm.pull-left {
+    color: #000;
+}
+section#bookingForm .sky-form a {
     background: transparent;
     color: #000;
     text-decoration: none;
 }
-section#Driver-verification-check a {
-    background: transparent;
-    color: #000;
-    text-decoration: none;
+section#driverdetail img.rounded-x {
+    width: 56px;
 }
-section#Vechicle-check button.btn-u {
-    margin-left: 24%;
+.commet a.accordion-toggle {
+    color: #fff;
+}
+.commet a.accordion-toggle i.fa.fa-comments {
+    color: #fff;
+}
+div#concep h2 {
+    font-size: 13px;
+}
+div#concep h3 {
+    font-size: 13px;
+}
+section#commentss h2.margin-bottom-20 {
+    background: #269abc;
+    color: #fff;
+    font-size: 15px;
+}
+section#commentss .col-md-12 {
+    margin-top: 10px;
+}
+section#usersp .profile .panel-heading {
+    color: #fff;
+    background: #269abc;
+    padding: 7px 15px;
+    border-bottom: solid 3px #f7f7f7;
+    border-radius: 8px;
+}
+div#Pay .panel-heading.overflow-h {
+    color: #fff;
+    background: #269abc;
+}
+section#nn .panel-heading {
+    background: #269abc;
+    color: #fff;
+}
+section#nn .panel-red {
+    border-color: #269abc;
+}
+section#qdmbooking .panel-heading.overflow-h {
+    background: #269abc;
+}
+section#nn .profile-body {
+    margin-top: 15px;
+}
+.page h2 {
+    background: #1abc9c;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+section#Dashboard .service-block-v3 .counter {
+    display: block;
+    line-height: 1;
+    font-size: 30px;
+    margin-left: 70px;
+}
+.support h2.panel-title.heading-sm.pull-left {
+    color: #fff;
+}
+span.pull-right i.fa.fa-plus {
+    color: #fff;
+}
+h2.panel-title.heading-sm.pull-left {
+    color: #fff;
+}
+.profile .profile-body {
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 8px;
+}
+.profile .table {
+    background: #fff;
+    display: block;
+    max-height: 200px;
+    overflow-x: auto;
+    border-radius: 8px;
+}
+div#concep .panel-heading {
+    background: #269abc;
+    color: #fff;
+    border-radius: 8px;
+}
+.panel-green {
+    border-color: transparent;
+}
+
+.panel, .panel-heading, .panel-group .panel {
+    border-radius: 0;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.service-block-u {
+    background: #72c02c;
+    border-radius: 8px;
+}
+.service-block-blue {
+    background: #3498db;
+    border-radius: 8px;
+}
+
+section#bookingForm {
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
