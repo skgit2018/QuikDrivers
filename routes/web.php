@@ -42,6 +42,8 @@ Route::get('/driverpayments', 'PagesController@getdpayments');
 Route::get('/driverrides', 'PagesController@getdrides');
 Route::get('/driversettings', 'PagesController@getdsettings');
 Route::get('/driverprofile', 'PagesController@getdprofile');
+Route::get('/postimage', 'PagesController@getpostimage');
+Route::get('/driverbooking', 'QdBookingController@driverbooking');
 
 
 Route::post('/customer/info', 'CustomerController@Customer');
@@ -54,6 +56,7 @@ Route::post('/signin/user', 'SigninController@userLogin');
 Route::post('/checkotp', 'OtpVerificationController@VerifyOtp');
 Route::get('/search', 'SearchController@SearchResults');
 Route::get('/driverprofiles', 'DriverProfileController@DriverProfile');
+Route::get('/customerprofile','CustomerProfileController@retrivedata');
 Route::post('/vehicle/info', 'VehicleController@Vehicle_info');
 Route::post('/driver/pool', 'DriverPoolController@Driverpool');
 Route::post('/booking/user', 'BookingController@Booking');
