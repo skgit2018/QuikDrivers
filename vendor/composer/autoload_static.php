@@ -39,7 +39,6 @@ class ComposerStaticInit6618a0d6eaeb39c3ec82f2511ac46248
         'T' => 
         array (
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
-            'Tests\\' => 6,
         ),
         'S' => 
         array (
@@ -144,10 +143,6 @@ class ComposerStaticInit6618a0d6eaeb39c3ec82f2511ac46248
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
             0 => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src',
-        ),
-        'Tests\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/tests',
         ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (
@@ -353,9 +348,20 @@ class ComposerStaticInit6618a0d6eaeb39c3ec82f2511ac46248
     public static $classMap = array (
         'App\\BankDetails' => __DIR__ . '/../..' . '/app/BankDetails.php',
         'App\\Booking' => __DIR__ . '/../..' . '/app/Booking.php',
+        'App\\ConformBooking' => __DIR__ . '/../..' . '/app/ConformBooking.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Customer' => __DIR__ . '/../..' . '/app/Customer.php',
+        'App\\CustomerDashboard' => __DIR__ . '/../..' . '/app/CustomerDashboard.php',
+        'App\\CustomerPayments' => __DIR__ . '/../..' . '/app/CustomerPayments.php',
+        'App\\CustomerProfile' => __DIR__ . '/../..' . '/app/CustomerProfile.php',
+        'App\\CustomerRides' => __DIR__ . '/../..' . '/app/CustomerRides.php',
+        'App\\CustomerSettings' => __DIR__ . '/../..' . '/app/CustomerSettings.php',
         'App\\DriverChecks' => __DIR__ . '/../..' . '/app/DriverChecks.php',
+        'App\\DriverDashboard' => __DIR__ . '/../..' . '/app/DriverDashboard.php',
+        'App\\DriverPayments' => __DIR__ . '/../..' . '/app/DriverPayments.php',
+        'App\\DriverProfile' => __DIR__ . '/../..' . '/app/DriverProfile.php',
+        'App\\DriverRides' => __DIR__ . '/../..' . '/app/DriverRides.php',
+        'App\\DriverSettings' => __DIR__ . '/../..' . '/app/DriverSettings.php',
         'App\\DriverVerification' => __DIR__ . '/../..' . '/app/DriverVerification.php',
         'App\\Driverdetails' => __DIR__ . '/../..' . '/app/Driverdetails.php',
         'App\\Driverpool' => __DIR__ . '/../..' . '/app/Driverpool.php',
@@ -366,16 +372,28 @@ class ComposerStaticInit6618a0d6eaeb39c3ec82f2511ac46248
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\BookingController' => __DIR__ . '/../..' . '/app/Http/Controllers/BookingController.php',
+        'App\\Http\\Controllers\\ConformBookingController' => __DIR__ . '/../..' . '/app/Http/Controllers/ConformBookingController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\CustomerController' => __DIR__ . '/../..' . '/app/Http/Controllers/CustomerController.php',
+        'App\\Http\\Controllers\\CustomerDashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/CustomerDashboardController.php',
+        'App\\Http\\Controllers\\CustomerPaymentsController' => __DIR__ . '/../..' . '/app/Http/Controllers/CustomerPaymentsController.php',
+        'App\\Http\\Controllers\\CustomerProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/CustomerProfileController.php',
+        'App\\Http\\Controllers\\CustomerRidesController' => __DIR__ . '/../..' . '/app/Http/Controllers/CustomerRidesController.php',
+        'App\\Http\\Controllers\\CustomerSettingsController' => __DIR__ . '/../..' . '/app/Http/Controllers/CustomerSettingsController.php',
+        'App\\Http\\Controllers\\DriverDashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/DriverDashboardController.php',
         'App\\Http\\Controllers\\DriverDetailsController' => __DIR__ . '/../..' . '/app/Http/Controllers/DriverDetailsController.php',
+        'App\\Http\\Controllers\\DriverPaymentsController' => __DIR__ . '/../..' . '/app/Http/Controllers/DriverPaymentsController.php',
         'App\\Http\\Controllers\\DriverPoolController' => __DIR__ . '/../..' . '/app/Http/Controllers/DriverPoolController.php',
+        'App\\Http\\Controllers\\DriverProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/DriverProfileController.php',
+        'App\\Http\\Controllers\\DriverRidesController' => __DIR__ . '/../..' . '/app/Http/Controllers/DriverRidesController.php',
+        'App\\Http\\Controllers\\DriverSettingsController' => __DIR__ . '/../..' . '/app/Http/Controllers/DriverSettingsController.php',
         'App\\Http\\Controllers\\DriverVerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/DriverVerificationController.php',
         'App\\Http\\Controllers\\DriverVerificationcheckController' => __DIR__ . '/../..' . '/app/Http/Controllers/DriverVerificationcheckController.php',
         'App\\Http\\Controllers\\EmailController' => __DIR__ . '/../..' . '/app/Http/Controllers/EmailController.php',
         'App\\Http\\Controllers\\LogoutController' => __DIR__ . '/../..' . '/app/Http/Controllers/LogoutController.php',
         'App\\Http\\Controllers\\OtpVerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/OtpVerificationController.php',
         'App\\Http\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/Http/Controllers/PagesController.php',
+        'App\\Http\\Controllers\\QdBookingController' => __DIR__ . '/../..' . '/app/Http/Controllers/QdBookingController.php',
         'App\\Http\\Controllers\\SearchController' => __DIR__ . '/../..' . '/app/Http/Controllers/SearchController.php',
         'App\\Http\\Controllers\\SearchResultsController' => __DIR__ . '/../..' . '/app/Http/Controllers/SearchResultsController.php',
         'App\\Http\\Controllers\\SigninController' => __DIR__ . '/../..' . '/app/Http/Controllers/SigninController.php',
@@ -398,6 +416,7 @@ class ComposerStaticInit6618a0d6eaeb39c3ec82f2511ac46248
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\QdBooking' => __DIR__ . '/../..' . '/app/QdBooking.php',
         'App\\Reference' => __DIR__ . '/../..' . '/app/Reference.php',
         'App\\Search' => __DIR__ . '/../..' . '/app/Search.php',
         'App\\Searchresults' => __DIR__ . '/../..' . '/app/Searchresults.php',
@@ -3743,10 +3762,7 @@ class ComposerStaticInit6618a0d6eaeb39c3ec82f2511ac46248
         'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Symfony\\Polyfill\\Php72\\Php72' => __DIR__ . '/..' . '/symfony/polyfill-php72/Php72.php',
-        'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',
-        'Tests\\Feature\\ExampleTest' => __DIR__ . '/../..' . '/tests/Feature/ExampleTest.php',
         'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
-        'Tests\\Unit\\ExampleTest' => __DIR__ . '/../..' . '/tests/Unit/ExampleTest.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
