@@ -16,6 +16,7 @@ class SignupController extends Controller
         $user = new Signup;
 
         //Fetch The Data
+        $user->reg_user_id  = $request->input('reg_user_id');
         $user->reg_user_name = ucwords($request->input('reg_name'));
         $user->reg_user_email = $request->input('reg_email');
         $user->reg_user_pwd = Hash::make($request->input('reg_password'));      
