@@ -8,24 +8,26 @@ use App\DriverProfile;
 use Session;
 use Auth;
 
-class DriverProfileController extends Controller
-{
-    public function DriverProfile(){
+class DriverProfileController extends Controller {
+
+    public function DriverProfile() {
 //Create an Object for the Model Class
-$driverprofile = new DriverProfile;
-/*$driver_data = DB::table('qdm_drivers_info')
-           // ->join('contacts', 'users.id', '=', 'contacts.user_id')
-            //->join('orders', 'users.id', '=', 'orders.user_id')
-            ->select('users.*', 'contacts.phone', 'orders.price')
-            ->get();*/
+        $driverprofile = new DriverProfile;
+       /* $driver_data = DB::table('qdm_users')
+           ->join('qdm_drivers_info', 'qdm_drivers_info.reg_user_id', '=', 'reg_user_id')
+          //->join('orders', 'users.id', '=', 'orders.user_id')
+          ->select('qdm_users.reg_user_name','qdm_users.reg_user_email','qdm_users.reg_mobile_number','qdm_users.reg_user_account_type' )
+          //->where('reg_user_id',2)
+          ->get();*/
+        $sess_id = Session::get('userdata')['id'];
+        $driver_data = DB::select("SELECT * FROM qdm_users INNER JOIN qdm_drivers_info ON qdm_users.reg_user_id = qdm_drivers_info.reg_user_id INNER JOIN qdm_driver_idverify ON qdm_users.reg_user_id = qdm_driver_idverify.reg_user_id INNER JOIN qdm_driver_bank_details ON qdm_users.reg_user_id = qdm_driver_bank_details.reg_user_id INNER JOIN qdm_driver_verify ON qdm_users.reg_user_id = qdm_driver_verify.reg_user_id INNER JOIN driver_reference ON qdm_users.reg_user_id = driver_reference.reg_user_id INNER JOIN driver_emergency ON qdm_users.reg_user_id = driver_emergency.reg_user_id   AND qdm_users.reg_user_account_type = 'driver' ");
 
-$driver_data = DB::select("SELECT * FROM qdm_users INNER JOIN qdm_drivers_info ON qdm_users.reg_user_id = qdm_drivers_info.reg_user_id INNER JOIN qdm_driver_idverify ON qdm_users.reg_user_id = qdm_driver_idverify.reg_user_id INNER JOIN qdm_driver_bank_details ON qdm_users.reg_user_id = qdm_driver_bank_details.reg_user_id INNER JOIN qdm_driver_verify ON qdm_users.reg_user_id = qdm_driver_verify.reg_user_id INNER JOIN driver_reference ON qdm_users.reg_user_id = driver_reference.reg_user_id INNER JOIN driver_emergency ON qdm_users.reg_user_id = driver_emergency.reg_user_id AND qdm_users.reg_user_account_type = 'driver'");
-
-     /*echo "<pre>";
-     print_r($driver_data);
-     echo "</pre>";*/  
+        /*echo "<pre>";
+        print_r($driver_data);
+        echo "</pre>";*/
 
 
-return redirect('/driverprofile')->with('driverprofiles', $driver_data);
+return redirect('driverprofile')->with('driverprofiles', $driver_data); 
     }
+
 }
