@@ -44,7 +44,7 @@
          </head>
          <body>
             <div class="wrapper">
-              @include('inc.menu')
+               @include('inc.menu')
                <hr>
                <div class="heading">
                   <h2>Customer Profile</h2>
@@ -58,28 +58,28 @@
                            <div class="profile-bio">
                               <div class="row">
                                  <div class="col-md-14">
-                                    <span class="chamge"><img class="img-responsive md-margin-bottom-10" src="assets/img/team/img32-md.jpg" alt=""></span>
+                                    <span class="change"><img class="img-responsive md-margin-bottom-10" src="assets/img/team/img32-md.jpg" alt=""></span>
                                     <a class="btn-u btn-u-sm" href="#">Change Picture</a>
                                  </div>
                               </div>
                            </div>
-                          <ul class="list-group sidebar-nav-v1 margin-bottom-40" id="sidebar-nav-1">
-                           <li class="list-group-item active">
-                              <a href="driverdashboard.html"><i class="fa fa-bar-chart-o"></i>Dashboard</a>
-                           </li>
-                           <li class="list-group-item">
-                              <a href="qd_drivers_profile.html"><i class="fa fa-user"></i>My Profile</a>
-                           </li>
-                           <li class="list-group-item">
-                              <a href="qd_driver_rides.html"><i class="fa fa-car"></i>My Rides</a>
-                           </li>
-                           <li class="list-group-item">
-                              <a href="qd_driver_payments.html"><i class="fa fa-cc-visa"></i>My Payments</a>
-                           </li>
-                           <li class="list-group-item">
-                              <a href="qd_driver_settings.html"><i class="fa fa-cog"></i>Settings</a>
-                           </li>
-                        </ul>
+                           <ul class="list-group sidebar-nav-v1 margin-bottom-40" id="sidebar-nav-1">
+                              <li class="list-group-item active">
+                                 <a href="/driverdashboard"><i class="fa fa-bar-chart-o"></i>Dashboard</a>
+                              </li>
+                              <li class="list-group-item">
+                                 <a href="/customerprofile"><i class="fa fa-user"></i>My Profile</a>
+                              </li>
+                              <li class="list-group-item">
+                                 <a href="/customerrides"><i class="fa fa-car"></i>My Rides</a>
+                              </li>
+                              <li class="list-group-item">
+                                 <a href="/customerpayments"><i class="fa fa-cc-visa"></i>My Payments</a>
+                              </li>
+                              <li class="list-group-item">
+                                 <a href="/customersettings"><i class="fa fa-cog"></i>Settings</a>
+                              </li>
+                           </ul>
                         </div>
                         <!--End Left Sidebar-->
                         <div id="concep">
@@ -87,68 +87,42 @@
                            <div class="col-md-9">
                               <div class="profile-body">
                                  <div class="row">
-                                                                     <div class="row">
-                                    <div class="col-md-9">
-                                       <div class="panel-heading">
-                                          <h3 class="panel-title">Besic Info</h3>
-                                       </div>
-                                       <div class="table-search-v1 margin-bottom-20">
-                                          <div class="table-responsive">
-                                             <table class="table table-hover table-bordered table-striped">
-                                                      <tbody>
-                                                         <tr class="highlight">
-                                                            <td class="field">Full Name</td>
-                                                            <td>Mr.Example surname</td>
-                                                         </tr>
-                                                         <tr>
-                                                            <td class="field">Age</td>
-                                                            <td> 30</td>
-                                                         </tr>
-                                                      </tbody>
-                                                   </table>
+                                    <div class="row">
+                                       <div class="col-md-9">
+                                          <div class="panel-heading">
+                                             <h3 class="panel-title">Basic Info</h3>
                                           </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                    
-                                 </div>
-                                     <div class="row">
-                                    <div class="col-md-9">
-                                       <div class="panel-heading">
-                                          <h3 class="panel-title">Contact Details</h3>
-                                       </div>
-                                       <div class="table-search-v1 margin-bottom-20">
-                                          <div class="table-responsive">
-                                              <table class="table table-hover table-bordered table-striped">
-                                                   <thead>
-                                                      <tr>
-                                                         <th>Address</th>
-                                                         <th>Email</th>
-                                                         <th>Contact</th>
-                                                         <th>Emergency Contact</th>
-                                                      </tr>
-                                                   </thead>
+                                          <div class="table-search-v1 margin-bottom-20">
+                                             <div class="table-responsive">
+                                                <table class="table ">
                                                    <tbody>
-                                                      <tr>
-                                                         <td>sr nagar hyd</td>
-                                                         <td>Ram@gmail.com</td>
-                                                         <td>+918745214563</td>
-                                                         <td>+918745214563</td>
+
+                                                 @foreach($data as $count)
+                                                      <tr class="highlight">
+                                                         <td class="field"><strong>Full Name</strong></td>
+                                                         <td>{{$count->reg_customer_first_name}}
+                                                         {{$count->reg_customer_last_name}}</td>
                                                       </tr>
                                                       <tr>
-                                                         <td>sr nagar hyd</td>
-                                                         <td>Ram@gmail.com</td>
-                                                         <td>+918745214563</td>
-                                                         <td>+918745214563</td>
+                                                        <td class="field"><strong>Phone</strong></td>
+                                                         <td> {{$count->reg_mobile_number}}</td>
                                                       </tr>
                                                       <tr>
-                                                         <td>sr nagar hyd</td>
-                                                         <td>Ram@gmail.com</td>
-                                                         <td>+918745214563</td>
-                                                         <td>+918745214563</td>
+                                                         <td class="field"><strong>Email</strong></td>
+                                                         <td> {{$count->reg_user_email}}</td>
                                                       </tr>
+                                                      <tr>
+                                                         <td class="field"><strong>Address</strong></td>
+                                                         <td> {{$count->reg_customer_street}} &nbsp;
+                                                         {{$count->reg_customer_location}} &nbsp;
+                                                         {{$count->reg_customer_city}} &nbsp;
+                                                         {{$count->reg_customer_state}}  </td>                                                        
+                                                      </tr>
+                                                    @endforeach
+
                                                    </tbody>
                                                 </table>
+                                             </div>
                                           </div>
                                        </div>
                                     </div>
@@ -156,73 +130,37 @@
                                  <div class="row">
                                     <div class="col-md-9">
                                        <div class="panel-heading">
-                                          <h3 class="panel-title">References</h3>
+                                          <h3 class="panel-title">Vehicle Details</h3>
                                        </div>
                                        <div class="table-search-v1 margin-bottom-20">
                                           <div class="table-responsive">
                                              <table class="table table-hover table-bordered table-striped">
                                                 <thead>
                                                    <tr>
-                                                      <th>References</th>
-                                                      <th>Name</th>
-                                                      <th>Email</th>
-                                                      <th>Contact1</th>
-                                                      <th>Contact2</th>
+                                                      <th>Vehicle NO.</th>
+                                                      <th>Vehicle Type</th>
+                                                      <th>Vehicle Make</th>
+                                                      <th>Vehicle model</th>
+                                                      <th>Vehicle Year</th>
                                                    </tr>
                                                 </thead>
                                                 <tbody>
+                                                @foreach($data as $count)
                                                    <tr>
-                                                      <td>
-                                                         <a href="#">Reference1</a>
-                                                      </td>
-                                                      <td>Ramakrishna</td>
-                                                      <td>
-                                                         Ram@gmail.com
-                                                      </td>
-                                                      <td>
-                                                         +918745214563
-                                                      </td>
-                                                      <td>
-                                                         +918745214563
-                                                      </td>
+                                                      <td>{{$count->reg_vehicle_No}} </td>
+                                                      <td>{{$count->reg_vehicle_type}} </td>
+                                                      <td>{{$count->reg_vehicle_make}} </td>
+                                                      <td>{{$count->reg_vehicle_model}} </td>
+                                                      <td>{{$count->reg_vehicle_year}} </td>
                                                    </tr>
-                                                   <tr>
-                                                      <td>
-                                                         <a href="#">Reference2</a>
-                                                      </td>
-                                                      <td>Ramakrishna</td>
-                                                      <td>
-                                                         Ram@gmail.com
-                                                      </td>
-                                                      <td>
-                                                         +918745214563
-                                                      </td>
-                                                      <td>
-                                                         +918745214563
-                                                      </td>
-                                                   </tr>
-                                                   <tr>
-                                                      <td>
-                                                         <a href="#">Reference3</a>
-                                                      </td>
-                                                      <td>Ramakrishna</td>
-                                                      <td>
-                                                         Ram@gmail.com
-                                                      </td>
-                                                      <td>
-                                                         +918745214563
-                                                      </td>
-                                                      <td>
-                                                         +918745214563
-                                                      </td>
-                                                   </tr>
+                                                   @endforeach
                                                 </tbody>
                                              </table>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
-                                 <!---End row-->
+                               
                                  <div class="row">
                                     <div class="col-md-9">
                                        <div class="panel panel-green margin-bottom-40">
@@ -234,43 +172,25 @@
                                                 <table class="table table-hover table-bordered table-striped">
                                                    <thead>
                                                       <tr>
-                                                         <th>First Name</th>
-                                                         <th>Last Name</th>
-                                                         <th>Phone</th>
-                                                         <th>Landline</th>
+                                                         <th>Name</th>
+                                                         <th>Email</th>
+                                                         <th>Contact 1</th>
+                                                         <th>Contact 2</th>
                                                       </tr>
                                                    </thead>
                                                    <tbody>
                                                       <tr>
-                                                         <td>rama</td>
-                                                         <td>Krishna</td>
+                                                      @foreach($data as $count)
+                                                         <td> {{$count->reg_customer_emergency_name}}</td>
+                                                         <td>{{$count->reg_customer_emergency_email}}</td>
                                                          <td>
-                                                            +918745214563
+                                                         {{$count->reg_customer_emergency_mobile}}
                                                          </td>
                                                          <td>
-                                                            +918745214563
-                                                         </td>
-                                                      </tr>
-                                                      <tr>
-                                                         <td>rama</td>
-                                                         <td>Krishna</td>
-                                                         <td>
-                                                            +918745214563
-                                                         </td>
-                                                         <td>
-                                                            +918745214563
+                                                         {{$count->reg_customer_emergency_landline}}
                                                          </td>
                                                       </tr>
-                                                      <tr>
-                                                         <td>rama</td>
-                                                         <td>Krishna</td>
-                                                         <td>
-                                                            +918745214563
-                                                         </td>
-                                                         <td>
-                                                            +918745214563
-                                                         </td>
-                                                      </tr>
+                                                      @endforeach
                                                    </tbody>
                                                 </table>
                                              </div>
@@ -285,7 +205,7 @@
                                              <div class="panel-heading overflow-h">
                                                 <a href="#collapse-Seven" data-parent="#accordion-v1" data-toggle="collapse" class="accordion-toggle">
                                                    <h2 class="panel-title heading-sm pull-left"><i class="fa fa-comments"></i>Comment</h2>
-                                       <span class="pull-right"><i class="fa fa-plus"></i></span>
+                                                   <span class="pull-right"><i class="fa fa-plus"></i></span>
                                              </div>
                                              </a>
                                              <div class="panel-collapse collapse" id="collapse-Seven">
@@ -445,9 +365,10 @@
                         </div>
                      </div>
                   </div>
-               </section>              <hr>
+               </section>
+               <hr>
                <!--=== Footer Version 1 ===-->
-              @include('inc.footer')
+               @include('inc.footer')
             </div>
             <!--/wrapper-->
             <!-- JS Global Compulsory -->
