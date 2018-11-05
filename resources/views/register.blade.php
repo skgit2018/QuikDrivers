@@ -62,7 +62,7 @@
                               <h2 class="margin-bottom-30">Create new account</h2>
                               <div class="input-group margin-bottom-20">
                                  <span class="input-group-addon rounded-left"><i class="icon-pencil color-green"></i></span>
-                                 <input type="text" class="form-control rounded-right"pattern="[a-z]{1,15}" name="reg_name" placeholder=" Name" required>
+                                 <input type="text" class="form-control rounded-right" name="reg_name" placeholder=" Name" required>
                               </div>
                               <div class="input-group margin-bottom-20">
                                  <span class="input-group-addon rounded-left"><i class="icon-envelope color-green"></i></span>
