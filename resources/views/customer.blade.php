@@ -1,15 +1,14 @@
 <?php 
-
-if(!Session::has('userdata')){
-
-    echo "<script>";
-    echo "location.replace('/login');";
-    echo "</script>";
-}
-
-$sess_id = Session::get('userdata')['id'];
-
-?>
+   if(!Session::has('userdata')){
+   
+       echo "<script>";
+       echo "location.replace('/login');";
+       echo "</script>";
+   }
+   
+   $sess_id = Session::get('userdata')['id'];
+   
+   ?>
 <!DOCTYPE html>
 <!--[if IE 8]> 
 <html lang="en" class="ie8">
@@ -57,195 +56,149 @@ $sess_id = Session::get('userdata')['id'];
             <div class="wrapper">
                <!--=== Header v1 ===-->
                @include('inc.menu')
-               </div>
-               <br/>
-
-               <section id="Driver-verification-check">
-                   <div class="container">
-                       
-                      
-                <div id="sky-form" class="sky-form">
-                {!! Form::open(['url' => '/customer/info', 'method' =>'post ']) !!}
-                    <header>Customer Verification Information</header>
-                    <input type="hidden" name="reg_user_id" value="<?php echo $sess_id;?>" />
-                    <fieldset>
-                        <div class="row">
-                               
-                            <section class="col col-6">
-                                    <span>First Name
-                                            <sup style="color:red;">*</sup>
-                                        </span>
-                                <label class="input">
-                                    <i class="icon-prepend fa fa-user"></i>
-                                    <input type="text" name="reg_customer_first_name" placeholder="First name">
-                                </label>
-                            </section>
-                            <section class="col col-6">
-                                    <span>Last Name
-                                            <sup style="color:red;">*</sup>
-                                        </span>
-                                <label class="input">
-                                    <i class="icon-prepend fa fa-user"></i>
-                                    <input type="text" name="reg_customer_last_name" placeholder="Last name">
-                                </label>
-                            </section>
-                            
-                        </div>
-
-                        <div class="row">
-                               
-                          
-                            <section class="col col-6">
-                                    <span>Gender
-                                          
-                                        </span>
-                                    <div class="inline-group">
-                                        <label class="radio"><input type="radio" name="reg_customer_gender" value="Male"  checked><i class="rounded-x"></i>Male</label>
-                                        <label class="radio"><input type="radio" name="reg_customer_gender" value="Female" ><i class="rounded-x"></i>Female</label>
-                                        <label class="radio"><input type="radio" name="reg_customer_gender" value="Other" ><i class="rounded-x"></i>Other</label>
-                                    </div>
-                                </section>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                            <section class="">
-                                    <span>Address
-                                            <sup style="color:red;">*</sup>
-                                        </span>
-                                    <label class="textarea">
-                                        <textarea rows="1" name="reg_customer_address" placeholder=" Enter Address"></textarea>
-                                    </label>
-                                </section>
-                               
-                                    <section class="">
-                                            <span>Street
-                                                    
-                                                </span>
-                                            
-                                            <label class="input">
-                                                <input type="text" name="reg_customer_street" placeholder=" Enter Street">
-                                            </label>
-                                        </section>
-                                        <section class="">
-                                                <span>location
-                                                        <sup style="color:red;">*</sup>
-                                                    </span>
-                                                <label class="input">
-                                                    <input type="text" name="reg_customer_location" placeholder=" Enter Location">
-                                                </label>
-                                            </section>
-                                       
-                        <div class="row">
-                                <section class="col col-4">
-                                        <span>City
-                                                <sup style="color:red;">*</sup>
-                                            </span>
-                                        <label class="input">
-                                            <input type="text" name="reg_customer_city" placeholder="City">
-                                        </label>
-                                    </section>
-                            <section class="col col-4">
-                                   <span>State
-                                    <sup style="color:red;">*</sup>
-                                </span>
-                                <label class="select">
-                                    <select name="reg_customer_state">
-                                        <option value="0" selected disabled>State</option>
-                                        <option value="244">Aaland Islands</option>
-                                        <option value="1">Afghanistan</option>
-                                       
-                                    </select>
-                                    <i></i>
-                                </label>
-                            </section>
-
-                           
-
-                            <section class="col col-4">
-                                    <span>Pin Code
-                                          
-                                        </span>
-                                <label class="input">
-                                    <input type="text" name="reg_customer_pincode" placeholder="Pin code">
-                                </label>
-                            </section>
-                        </div>
-
-                       
-
-                      
-                    </fieldset>
-                    
-</div>
-<br/>
-<div id="sky-form" class="sky-form">
-
-        <header>Emergency Contact Information
-                        </header>
-                        <fieldset>
+            </div>
+            <br/>
+            <section id="Driver-verification-check">
+               <div class="container">
+                  <div id="sky-form" class="sky-form">
+                     {!! Form::open(['url' =>'/customer/info', 'method' =>'post ']) !!}
+                     <header>Customer Verification Information</header>
+                     <input type="hidden" name="reg_user_id" value="<?php echo $sess_id;?>" />
+                     <fieldset>
                         <div class="row">
                            <section class="col col-6">
-                                    <span>First Name
-                                              
-                                            </span>
+                              <span>First Name
+                              <sup style="color:red;">*</sup>
+                              </span>
                               <label class="input">
                               <i class="icon-prepend fa fa-user"></i>
-                              <input type="text" name="reg_customer_emergency_name" placeholder="name">
+                              <input type="text" class="form-control" name="reg_customer_first_name" placeholder="First name">
                               </label>
                            </section>
                            <section class="col col-6">
-                                    <span>Last Name
-                                               
-                                            </span>
+                              <span>Last Name
+                              <sup style="color:red;">*</sup>
+                              </span>
                               <label class="input">
                               <i class="icon-prepend fa fa-user"></i>
-                              <input type="text" name="reg_customer_emergency_email" placeholder="email">
+                              <input type="text"class="form-control" name="reg_customer_last_name" placeholder="Last name">
+                              </label>
+                           </section>
+                        </div>
+                        <div class="row">
+                           <section class="col col-9">
+                              <span>Gender </span>                  
+                              <div class="inline-group">
+                                 <label class="radio"><input type="radio" name="reg_customer_gender" value="Male"  checked><i class="rounded-x"></i>Male</label>
+                                 <label class="radio"><input type="radio" name="reg_customer_gender" value="Female" ><i class="rounded-x"></i>Female</label>
+                                 <label class="radio"><input type="radio" name="reg_customer_gender" value="Other" ><i class="rounded-x"></i>Other</label>
+                              </div>
+                           </section>
+                        </div>
+                     </fieldset>
+                     <fieldset>
+                        <section class="">
+                           <span>Street </span>                                                   
+                           <label class="input">
+                           <input type="text" class="form-control" name="reg_customer_street" placeholder=" Enter Street">
+                           </label>
+                        </section>
+                        <section class="">
+                           <span>location
+                           <sup style="color:red;">*</sup>
+                           </span>
+                           <label class="input">
+                           <input type="text" class="form-control" name="reg_customer_location" placeholder=" Enter Location">
+                           </label>
+                        </section>
+                        <div class="row">
+                           <section class="col col-4">
+                              <span>City
+                              <sup style="color:red;">*</sup>
+                              </span>
+                              <label class="input">
+                              <input type="text" class="form-control" name="reg_customer_city" placeholder="City">
+                              </label>
+                           </section>
+                           <section class="col col-4">
+                              <span>State
+                              <sup style="color:red;">*</sup>
+                              </span>
+                              <label class="select">
+                                 <select name="reg_customer_state">
+                                    <option value="0" selected disabled>State</option>
+                                    <option value="1">Telangana</option>
+                                    <option value="2">AndhraPradesh</option>
+                                 </select>
+                              </label>
+                           </section>
+                           <section class="col col-4">
+                              <span>Pin Code </span>                                        
+                              <label class="input">
+                              <input type="text" class="form-control" name="reg_customer_pincode" placeholder="Pin code">
+                              </label>
+                           </section>
+                           <section class="">
+                              <label>Upload  Photo</label><sup style="color:red;">*</sup>
+                              <input type="file" name="reg_customer_image" id="file" placeholder=""> 
+                              <!-- <input type="hidden" value="{{ csrf_token() }}" name="_token" /> -->
+                           </section>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <br/>
+                  <div id="sky-form" class="sky-form">
+                     <header>Emergency Contact Information
+                     </header>
+                     <fieldset>
+                        <div class="row">
+                           <section class="col col-6">
+                              <span>Name </span>                                  
+                              <label class="input">
+                              <i class="icon-prepend fa fa-user"></i>
+                              <input type="text" class="form-control" name="reg_customer_emergency_name" placeholder="name">
                               </label>
                            </section>
                            <section class="col col-6">
-                                    <span>Phone
-                                              
-                                            </span>
+                              <span>Emergency Email
+                              </span>
                               <label class="input">
-                              <i class="icon-prepend fa fa-phone"></i>
-                              <input type="tel" name="reg_customer_emergency_mobile" placeholder="Phone">
+                              <i class="icon-prepend fa fa-user"></i>
+                              <input type="text" class="form-control" name="reg_customer_emergency_email" placeholder="email">
                               </label>
                            </section>
                            <section class="col col-6">
-                                    <span>Landline
-                                                
-                                            </span>
+                              <span>Contact 1
+                              </span>
                               <label class="input">
                               <i class="icon-prepend fa fa-phone"></i>
-                              <input type="tel" name="reg_customer_emergency_landline" placeholder="Landline">
+                              <input type="text" class="form-control" name="reg_customer_emergency_mobile" placeholder="Phone">
                               </label>
-                             
                            </section>
-                          
+                           <section class="col col-6">
+                              <span>Contact 2
+                              </span>
+                              <label class="input">
+                              <i class="icon-prepend fa fa-phone"></i>
+                              <input type="text" class="form-control" name="reg_customer_emergency_landline" placeholder="Landline">
+                              </label>
+                           </section>
                            <label class="checkbo">
-                           <a href=""><input type="checkbox"> I agree to the terms &amp; conditions</a>
+                           <a href="#"><input type="checkbox"> I agree to the terms &amp; conditions</a>
                            </label>
                         </div>
-                  </fieldset>
-                 <fieldset>
-                  <button type="submit" name="customer_submit" class="btn-u">Continue</button>
-            </fieldset> 
-          </div>
-
+                     </fieldset>
+                     <fieldset>
+                        <button type="submit" name="customer_submit" class="btn-u">Continue</button>
+                     </fieldset>
+                  </div>
                </div>
                </div>
-         {!! Form::close() !!}
-           
-
-         
-            
-                </div>
-               
-               </section>
-               <br/>
-
-               @include('inc.footer')             
+               {!! Form::close() !!}
+               </div>
+            </section>
+            <br/>
+            @include('inc.footer')             
             </div>
             <!--/wrapper-->
             <!-- JS Global Compulsory -->
