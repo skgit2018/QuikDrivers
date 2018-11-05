@@ -87,5 +87,8 @@ class PagesController extends Controller
     }    
     public function getdprofile(){
         return view('driverprofile');
-    }            
+    }       
+    public function getpostimage(){
+        return view('postimage');
+    }             
 }
