@@ -71,7 +71,7 @@ $sess_id = Session::get('userdata')['id'];
                               </span>
                               <label class="input">
                               <i class="icon-prepend fa fa-user"></i>
-                              <input type="text" name="reg_driver_firstname" pattern="[a-z]{1,15}" placeholder="First name" required>
+                              <input type="text" name="reg_driver_firstname" preg_match("/^([a-zA-Z' ]+)$/","Given_Name") placeholder="First name" required>
                               </label>
                            </section>
                            <section class="col col-6">
@@ -80,13 +80,13 @@ $sess_id = Session::get('userdata')['id'];
                               </span>
                               <label class="input">
                               <i class="icon-prepend fa fa-user"></i>
-                              <input type="text" name="reg_driver_lastname" pattern="[a-z]{1,15}" placeholder="Last name" required>
+                              <input type="text" name="reg_driver_lastname" preg_match("/^([a-zA-Z' ]+)$/","Given_Name") placeholder="Last name" required>
                               </label>
                            </section>
                         </div>
                         <div class="row">
                           
-                           <section class="col col-6">
+                           <section class="col col-7">
                               <span>Gender
                               </span>
                               <div class="inline-group">
@@ -95,7 +95,30 @@ $sess_id = Session::get('userdata')['id'];
                                  <label class="radio"><input type="radio" name="reg_driver_gender"value="Other"><i class="rounded-x"></i>Other</label>
                               </div>
                            </section>
+                           <section class="col col-2">
+                           <span>Age
+                           </span>
+                           <label class="input">
+                           <i class="icon-prepend fa fa-user"></i>
+                           <input type="text" name="reg_driver_age" size="2"   pattern="numaric"  placeholder=" Enter Age" required>
+                           </label>
+                        </section>
+    
                         </div>
+                        <div class="row">
+                          
+                          
+                           <section class="col col-11">
+                           <span>Languages
+                           </span>
+                           <label class="input">
+                           <i class="icon-prepend fa fa-language"></i>
+                           <input type="text" name="reg_driver_language" placeholder=" Enter Languages" required>
+                           </label>
+                        </section>
+    
+                        </div>
+                        
                      </fieldset>
                      <fieldset>
                         <section class="">
