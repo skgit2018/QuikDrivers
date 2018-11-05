@@ -63,12 +63,12 @@ $sess_id = Session::get('userdata')['id'];
                   <div class="container">
                      <div action="#" id="sky-form" class="sky-form">
                      {!! Form::open(['url' => '/vehicle/info', 'method' =>'POST']) !!}
-                        <header>Vechicle Information</header>
+                        <header>Vehicle Information</header>
                         <input type="hidden" name="reg_user_id" value="<?php echo $sess_id;?>" />
                         <fieldset>
                            <div class="row">
                               <section class="col col-6">
-                                 <span>Vechicle Type
+                                 <span>Vehicle Type
                                  <sup style="color:red;">*</sup>
                                  </span>
                                  <label class="input">
@@ -77,7 +77,7 @@ $sess_id = Session::get('userdata')['id'];
                                  </label>
                               </section>
                               <section class="col col-6">
-                                 <span>Vechicle Make
+                                 <span>Vehicle Make
                                  <sup style="color:red;">*</sup>
                                  </span>
                                  <label class="input">
@@ -88,7 +88,7 @@ $sess_id = Session::get('userdata')['id'];
                            </div>
                            <div class="row">
                               <section class="col col-6">
-                                 <span>Vechicle Model
+                                 <span>Vehicle Model
                                  <sup style="color:red;">*</sup>
                                  </span>
                                  <label class="input">
@@ -97,149 +97,24 @@ $sess_id = Session::get('userdata')['id'];
                                  </label>
                               </section>
                               <section class="col col-6">
-                                 <span>Vechicle Year
+                                 <span>Vehicle No.
+                                 </span><sup style="color:red;">*</sup>
+                                 <label class="input">
+                                 <i class="icon-prepend fa fa-car"></i>
+                                 <input type="text" name="reg_vehicle_No" placeholder="">
+                                 </label>
+                              </section>
+                           </div>
+                           <div class="row">
+                              <section class="col col-6">
+                                 <span>Vehicle Year
                                  </span>
                                  <label class="input">
                                  <i class="icon-prepend fa fa-car"></i>
                                  <input type="text" name="reg_vehicle_year" placeholder="">
                                  </label>
                               </section>
-                           </div>
-                           <div class="row">
-                              <section class="col col-6">
-                                 <span>vehicle_rent_Details
-                                 </span>
-                                 <label class="input">
-                                 <i class="icon-prepend fa fa-car"></i>
-                                 <input type="text" name="reg_vehicle_rent_details" placeholder="">
-                                 </label>
-                              </section>
-                              <section class="col col-6">
-                                 <span>vehicle agency Name
-                                 </span>
-                                 <label class="input">
-                                 <i class="icon-prepend fa fa-car"></i>
-                                 <input type="text" name="reg_vehicle_agency_name" placeholder="">
-                                 </label>
-                              </section>
-                              <section class="col col-6">
-                                 <span>vehicle agency Address
-                                 <sup style="color:red;">*</sup>
-                                 </span>
-                                 <label class="input">
-                                 <i class="icon-prepend fa fa-car"></i>
-                                 <input type="text" name="reg_vehicle_agency_address" placeholder="">
-                                 </label>
-                              </section>
-                              <section class="col col-6">
-                                 <span>vehicle owner Name
-                                 <sup style="color:red;">*</sup>
-                                 </span>
-                                 <label class="input">
-                                 <i class="icon-prepend fa fa-car"></i>
-                                 <input type="text" name="reg_vehicle_owner_name" placeholder="">
-                                 </label>
-                              </section>
-                              <section class="col col-6">
-                                 <span>vehicle owner Email
-                                 <sup style="color:red;">*</sup>
-                                 </span>
-                                 <label class="input">
-                                 <i class="icon-prepend fa fa-car"></i>
-                                 <input type="text" name="reg_vehicle_owner_email" placeholder="">
-                                 <i></i>
-                                 </label>
-                              </section>
-                              <section class="col col-6">
-                                 <span>vehicle owner mobile
-                                 </span>
-                                 <label class="input">
-                                 <i class="icon-prepend fa fa-car"></i>
-                                 <input type="text" name="reg_vehicle_owner_mobile" placeholder="">
-                                 </label>
-                              </section>
-                           </div>
-                        </fieldset>
-                        <hr>
-                        <fieldset>
-                           <div class="row">
-                              <section class="col col-6">
-                                 <span>vehicle owner landline
-                                 <sup style="color:red;">*</sup>
-                                 </span>
-                                 <label class="input">
-                                 <i class="icon-prepend fa fa-car"></i>
-                                 <input type="text" name="reg_vehicle_owner_landline" placeholder="">
-                                 </label>
-                              </section>
-                              <!-- <section class="col col-6">
-                                 <span>Adhar Card no
-                                         <sup style="color:red;">*</sup>
-                                     </span>
-                                 <label class="input">
-                                 
-                                 <input type="text" name="number" placeholder="Adhar Card Number">
-                                 </label>
-                                 </section>-->
-                              <!--<section class="col col-6">
-                                 <span>Adhar Card
-                                         <sup style="color:red;">*</sup>
-                                     </span>
-                                 <label class="input">
-                                   
-                                     <input type="file" name="Adhar" placeholder=" Uplod Adhar Card">
-                                 </label>
-                                 </section>-->
-                              <section class="col col-6">
-                                 <span>vehicle contact name
-                                 <sup style="color:red;">*</sup>
-                                 </span>
-                                 <label class="input">
-                                 <i class="icon-prepend fa fa-car"></i>
-                                 <input type="text" name="reg_vehicle_contact_name" placeholder="">
-                                 </label>
-                              </section>
-                              <!-- <section class="col col-6">
-                                 <span>Dirving License
-                                         <sup style="color:red;">*</sup>
-                                     </span>
-                                 <label class="input">
-                                   
-                                     <input type="file" name="License" placeholder=" Uplod Driving License">
-                                 </label>
-                                 </section>-->
-                              <section class="col col-6">
-                                 <span>vehicle contact email
-                                 <sup style="color:red;">*</sup>
-                                 </span>
-                                 <label class="input">
-                                 <i class="icon-prepend fa fa-car"></i>
-                                 <input type="text" name="reg_vehicle_contact_email" placeholder="">
-                                 </label>
-                              </section>
-                              <section class="col col-6">
-                                 <span>vehicle contact mobile
-                                 <sup style="color:red;">*</sup>
-                                 </span>
-                                 <label class="input">
-                                 <i class="icon-prepend fa fa-car"></i>
-                                 <input type="text" name="reg_vehicle_contact_mobile" placeholder="">
-                                 </label>
-                              </section>
-                              <section class="">
-                                 <span>vehicle contact landline
-                                 <sup style="color:red;">*</sup>
-                                 </span>
-                                 <label class="input">
-                                 <input type="text" name="reg_vehicle_contact_landline" placeholder="">
-                                 </label>
-                              </section>
-                           </div>
-                     </div>
-                  </div>
-                  </fieldset>
-                  
-           
+             
             
             </div>
             <br/>
