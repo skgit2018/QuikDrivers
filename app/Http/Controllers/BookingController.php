@@ -18,10 +18,10 @@ class BookingController extends Controller
         $user->driver_time =  ($request->input('driver_time'));
         $user->search_user_status = 1;
         
-        $user->save();
+        $user->save();*/
 
 
-        return redirect('/searchresults');*/
+        return redirect('/searchresults');
 
     }
 }
