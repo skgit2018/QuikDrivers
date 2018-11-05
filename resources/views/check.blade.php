@@ -297,7 +297,7 @@ $sess_id = Session::get('userdata')['id'];
                  <fieldset>
                   <button type="submit" class="btn-u">Save&Exist</button>
             </fieldset> 
-            {!! Form::close() !!}
+              
                </div>
             </section>
 
