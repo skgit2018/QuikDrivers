@@ -44,7 +44,7 @@ class SigninController extends Controller
 
                 $sess_uname = $request->session()->put('userdata', $user_data);       
                 $sess_data = $request->session()->all();
-                return redirect('/driverpool');
+                return redirect('/driverdashboard');
 
             }elseif($user_account_type == 'driver' && $user_status == 0){
                 $sess_uname = $request->session()->put('userdata', $user_data);       
@@ -57,7 +57,7 @@ class SigninController extends Controller
                
                 $sess_uname = $request->session()->put('userdata', $user_data);
                 $sess_data = $request->session()->all();                 
-                return redirect('/searchresults')->with('userinfo', $sess_data);
+                return redirect('/customerdashboard');//->with('userinfo', $sess_data);
             }
             elseif($user_account_type == 'user' && $user_status == 0){
                 $sess_uname = $request->session()->put('userdata', $user_data);       
