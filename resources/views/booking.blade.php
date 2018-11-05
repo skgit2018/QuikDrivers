@@ -104,10 +104,10 @@
                              
                            </div>
                            <div class="col-lg-6 text-right">
-                              <button class="btn-u" type="submit">Search</button>
+                              <button class="btn-u" type="submit"><a href="/search">Search</a></button>
                            </div>
                         </div>
-                        {!! Form::close() !!}
+                        
                   </div>
                </div>
             </div><!--/container-->
