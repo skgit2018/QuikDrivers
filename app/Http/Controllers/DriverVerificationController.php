@@ -22,6 +22,8 @@ class DriverVerificationController extends Controller
    $driver->reg_driver_firstname = ucwords($request->input('reg_driver_firstname'));
    $driver->reg_driver_lastname =  ucwords($request->input('reg_driver_lastname'));
    $driver->reg_driver_gender = $request->input('reg_driver_gender');
+   $driver->reg_driver_age = $request->input('reg_driver_age');
+   $driver->reg_driver_language = $request->input('reg_driver_languages');
    $driver->reg_driver_address = $request->input('reg_driver_address');
    $driver->reg_driver_street = $request->input('reg_driver_street');
    $driver->reg_driver_location = $request->input('reg_driver_location');
@@ -46,7 +48,7 @@ class DriverVerificationController extends Controller
    $filenameToStore = $filename.'_'.time().'.'.$extension;
 
    //Upload Image
-    $path = $request->file('reg_driver_image')->storeAs('public/uploads', $filenameToStore);
+    $path = $request->file('reg_driver_image')->storeAs('public/storage/uploads', $filenameToStore);
    
    $idverification->reg_driver_image = $filenameToStore;
    $idverification->reg_driver_experience = $request->input('reg_driver_experience');
@@ -66,7 +68,7 @@ class DriverVerificationController extends Controller
    $bankdetails->reg_driver_status = 1;
 
 
-   /*echo "Filename with extension :". $filenameWithExt;
+  /* echo "Filename with extension :". $filenameWithExt;
    echo "<br />";
    echo "File Name :". $filename;
    echo "<br />";
@@ -78,7 +80,17 @@ class DriverVerificationController extends Controller
    echo "<br />";*/
 
 
-
+  /* Class A extends controller {
+    Public function test (Request $request){
+   try{
+       //Write all the code here
+}
+catch (Exception $e){
+   echo $e->getMessage();
+}
+}
+}*/
+ 
 
    $driver->save();
    $idverification->save();
