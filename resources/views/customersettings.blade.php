@@ -65,23 +65,22 @@
                      </div>
                </div>
 			   <ul class="list-group sidebar-nav-v1 margin-bottom-40" id="sidebar-nav-1">
-                           <li class="list-group-item active">
-                              <a href="driverdashboard.html"><i class="fa fa-bar-chart-o"></i>Dashboard</a>
-                           </li>
-                           <li class="list-group-item">
-                              <a href="qd_drivers_profile.html"><i class="fa fa-user"></i>My Profile</a>
-                           </li>
-                           <li class="list-group-item">
-                              <a href="qd_driver_rides.html"><i class="fa fa-car"></i>My Rides</a>
-                           </li>
-                           <li class="list-group-item">
-                              <a href="qd_driver_payments.html"><i class="fa fa-cc-visa"></i>My Payments</a>
-                           </li>
-                           <li class="list-group-item">
-                              <a href="qd_driver_settings.html"><i class="fa fa-cog"></i>Settings</a>
-                           </li>
-                        </ul>
-
+                              <li class="list-group-item active">
+                                 <a href="/cutomerdashboard"><i class="fa fa-bar-chart-o"></i>Dashboard</a>
+                              </li>
+                              <li class="list-group-item">
+                                 <a href="/customerprofile"><i class="fa fa-user"></i>My Profile</a>
+                              </li>
+                              <li class="list-group-item">
+                                 <a href="/customerrides"><i class="fa fa-car"></i>My Rides</a>
+                              </li>
+                              <li class="list-group-item">
+                                 <a href="/customerpayments"><i class="fa fa-cc-visa"></i>My Payments</a>
+                              </li>
+                              <li class="list-group-item">
+                                 <a href="/customersettings"><i class="fa fa-cog"></i>Settings</a>
+                              </li>
+                           </ul>
 					
 					<!--End Datepicker-->
 				</div>
