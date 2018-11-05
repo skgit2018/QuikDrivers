@@ -1,3 +1,17 @@
+
+<?php 
+
+if(!Session::has('userdata')){
+
+    echo "<script>";
+    echo "location.replace('/login');";
+    echo "</script>";
+}
+
+$sess_id = Session::get('userdata')['id'];
+
+?>
+
 <!DOCTYPE html>
 <!--[if IE 8]> 
 <html lang="en" class="ie8">
@@ -49,6 +63,12 @@
 @include('inc.menu')
         <section id="basicinfos">
             <!--=== Profile ===-->
+           
+            <div class="container content profile">
+           
+                <div class="row">
+                    <!--Left Sidebar-->
+                    
             <?php if(Session::has('driverprofiles')){                
              $driverprofil = Session::get('driverprofiles');            
              foreach($driverprofil as $sdata){
@@ -87,34 +107,30 @@
 
            
            ?> 
-            <div class="container content profile">
-           
-                <div class="row">
-                    <!--Left Sidebar-->
                     <div class="col-md-3 md-margin-bottom-40">
                         <div class="profile-bio">
                             <div class="row">
                                 <div class="col-md-14">
                                     <span class="chamge"><img class="img-responsive md-margin-bottom-10" src="assets/img/team/img32-md.jpg" alt=""></span>
-                                    <a class="btn-u btn-u-sm" href="#">Change Picture</a>
+                                    <a class="btn-u btn-u-sm" href="/driververification">Change Picture</a>
                                 </div>
                             </div>
                         </div>
-                     <ul class="list-group sidebar-nav-v1 margin-bottom-40" id="sidebar-nav-1">
+                        <ul class="list-group sidebar-nav-v1 margin-bottom-40" id="sidebar-nav-1">
+                           <li class="list-group-item ">
+                              <a href="/driverdashboard"><i class="fa fa-bar-chart-o"></i>Dashboard</a>
+                           </li>
                            <li class="list-group-item active">
-                              <a href="driverdashboard.html"><i class="fa fa-bar-chart-o"></i>Dashboard</a>
+                              <a href="/driverprofiles"><i class="fa fa-user"></i>My Profile</a>
                            </li>
                            <li class="list-group-item">
-                              <a href="qd_drivers_profile.html"><i class="fa fa-user"></i>My Profile</a>
+                              <a href="/driverrides"><i class="fa fa-car"></i>My Rides</a>
                            </li>
                            <li class="list-group-item">
-                              <a href="qd_driver_rides.html"><i class="fa fa-car"></i>My Rides</a>
+                              <a href="/driverpayments"><i class="fa fa-cc-visa"></i>My Payments</a>
                            </li>
                            <li class="list-group-item">
-                              <a href="qd_driver_payments.html"><i class="fa fa-cc-visa"></i>My Payments</a>
-                           </li>
-                           <li class="list-group-item">
-                              <a href="qd_driver_settings.html"><i class="fa fa-cog"></i>Settings</a>
+                              <a href="/driversettings"><i class="fa fa-cog"></i>Settings</a>
                            </li>
                         </ul>
                     </div>
@@ -137,26 +153,24 @@
                                                 <div class="table-responsive">
                                                     <table class="table table-hover table-bordered table-striped">
 
-                                                                                                             <tbody>
-                                                            <tr class="highlight">
-                                                                <td class="field">Full Name</td>
-                                                                <td> <?php
-                                                                echo$driver_name = $driver_fname . " ". $driver_lname;
-                                                                ?></td>
-                                                            </tr>
+                                                                                            <tbody>
+        <tr class="highlight">
+        <td class="field">Full Name</td>
+        <td> <?php echo$driver_name = $driver_fname . " ". $driver_lname;?></td>
+        </tr>
 
-                                                            <tr>
-                                                                <td class="field">Age</td>
-                                                                <td> 30</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="field">Languages</td>
-                                                                <td>Hindi ,English ,Telugu</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="field">Rides</td>
-                                                                <td>20</td>
-                                                            </tr>
+        <tr>
+        <td class="field">Age</td>
+        <td> 30</td>
+        </tr>
+        <tr>
+        <td class="field">Languages</td>
+        <td>Hindi ,English ,Telugu</td>
+        </tr>
+        <tr>
+        <td class="field">Rides</td>
+        <td>20</td>
+        </tr>
                                                             <tr>
                                                                 <td class="field">Per day Salary(or)Charge</td>
                                                                 <td> $500
@@ -509,62 +523,63 @@
             </div>
             <!--End Timeline-->
         </section>
-        <section id="commentss">
-
-            <div class="container content-sm">
-                <div class="row">
-                    <!-- Blog All Posts -->
-
-                    <!-- End News v3 -->
-
-                    <h2 class="margin-bottom-20">Post a Comment</h2>
-                    <!-- Form -->
-                    <form action="http://htmlstream.com/preview/unify-v1.9.6/assets/php/sky-forms-pro/demo-comment-process.php" method="post" id="sky-form3" class="sky-form comment-style">
-                        <fieldset>
-                            <div class="row sky-space-30">
-                                <div class="col-md-6">
-                                    <div>
-                                        <input type="text" name="name" id="name" placeholder="Name" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div>
-                                        <input type="text" name="email" id="email" placeholder="Email" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="sky-space-30">
-                                <div>
-                                    <textarea rows="8" name="message" id="message" placeholder="Write comment here ..." class="form-control"></textarea>
-                                </div>
-                            </div>
-
-                            <p>
-                                <button type="submit" class="btn-u">Submit</button>
-                            </p>
-                        </fieldset>
-
-                        <div class="message">
-                            <i class="rounded-x fa fa-check"></i>
-                            <p>Your comment was successfully posted!</p>
+<section id="commentss">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-3">
                         </div>
-                    </form>
-                    <!-- End Form -->
-                </div>
-                <!-- End Blog All Posts -->
-
-                <!-- Blog Sidebar -->
-
-                <!-- End Blog Sidebar -->
-                <?php }}?>
-            </div>
-            
-    </div>
-   
-    <!--/end container-->
-
-    </section>
+                        <div class="col-md-9">
+                           <h2 class="margin-bottom-20">&nbsp;Post Comment</h2>
+                           <!-- Form -->
+                           <form action="http://htmlstream.com/preview/unify-v1.9.6/assets/php/sky-forms-pro/demo-comment-process.php" method="post" id="sky-form3" class="sky-form comment-style">
+                              <fieldset>
+                                 <div class="row sky-space-30">
+                                    <div class="col-md-12">
+                                       <div>
+                                          <input type="text" name="name" id="name" placeholder="Name" class="form-control">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                       <div>
+                                          <input type="text" name="email" id="email" placeholder="Email" class="form-control">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="sky-space-30">
+                                    <div>
+                                       <textarea rows="8" name="message" id="message" placeholder="Write comment here ..." class="form-control"></textarea>
+                                    </div>
+                                 </div>
+                                 <p class="pull-right"><button type="submit" class="btn-u">Submit</button></p>
+                              </fieldset>
+                              <div class="message">
+                                 <i class="rounded-x fa fa-check"></i>
+                                 <p>Your comment was successfully posted!</p>
+                              </div>
+                              <fieldset>
+                                 <section class="pull-right">
+                                    <label class="label"></label>
+                                    <div class="rating">
+                                       <input type="radio" name="stars-rating" id="stars-rating-5">
+                                       <label for="stars-rating-5"><i class="fa fa-star"></i></label>
+                                       <input type="radio" name="stars-rating" id="stars-rating-4">
+                                       <label for="stars-rating-4"><i class="fa fa-star"></i></label>
+                                       <input type="radio" name="stars-rating" id="stars-rating-3">
+                                       <label for="stars-rating-3"><i class="fa fa-star"></i></label>
+                                       <input type="radio" name="stars-rating" id="stars-rating-2">
+                                       <label for="stars-rating-2"><i class="fa fa-star"></i></label>
+                                       <input type="radio" name="stars-rating" id="stars-rating-1">
+                                       <label for="stars-rating-1"><i class="fa fa-star"></i></label>
+                                    </div>
+                                 </section>
+                              </fieldset>
+                           </form>
+                           <!-- End Form -->
+                        </div>
+                           <?php }}?>
+                     </div>
+                  </div>
+               </section>
     <!--=== Footer Version 1 ===-->
    @include('inc.footer')
     </div>
