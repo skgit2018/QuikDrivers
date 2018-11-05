@@ -88,7 +88,9 @@
       
      
      <div class="col-md-2">
-      <img class="rounded-x" src="assets/img/testimonials/img1.jpg" alt="">
+     <?php
+               echo $driver_image = $sdata->reg_driver_image;
+               ?>
      </div>
     
    <div class="col-md-4">
@@ -156,7 +158,7 @@
    <div class="col-md-2">
       <ul class="deatilsdrivers">
       <li><button class="btn-u btn-u-dark" type="button">Book Now</button></li>
-      <li><button class="btn-u btn-u-dark" type="button">View More</button></li>
+      <li><a href="driverdetails"><button class="btn-u btn-u-dark" type="button">View More</button></a></li>
    </ul>
    </div>
    
