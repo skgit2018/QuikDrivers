@@ -50,7 +50,7 @@
                   <div id="da-slider" class="da-slider">
                      <div class="da-slide">
                         <h2><i>PLEASE &amp;</i> <br /> <i>SIGN UP HERE</i> </h2>
-                        <button class="btn-u btn-u-green" type="button"><a href="signup1.html">SIGN UP HERE</a></button>
+                        <button class="btn-u btn-u-green" type="button"><a href="/signup">SIGN UP HERE</a></button>
                         <div class="da-img"><img class="img-responsive" src="assets/plugins/parallax-slider/img/car4.png" alt=""></div>
                      </div>
                      <div class="da-slide">
