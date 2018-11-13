@@ -56,51 +56,70 @@
             <div class="container">
 
                 <div class="row">
-                <?php if(Session::has('search')){                
-             $searchdata = Session::get('search');            
-             foreach($searchdata as $sdata){
-                 $driver_name = $driver_fname . " ". $driver_lname;
-                 $driver_loc = $sdata->reg_driver_location;
-                 
-                 
-                 
-
-           
-           ?>
                     <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12">
 
                         <div class="panel-heading overflow-h">
                             <h2 class="panel-title heading-sm pull-left">Booking Information</h2>
 
                         </div>
-                        <hr>
-                              <dl class="dl-horizontal">
-                              <dt><strong>Date&Time:</strong></dt>
-                              <dd>Sep 25,2018 10:00 -15:00</dd>
-                              <dt><strong>Location:</strong></dt>
-                              <dd><?php
-                               echo $driver_loc = $sdata->reg_driver_location;
-                               ?></dd>
-                              <dt><strong>Driver Name:</strong></dt>
-                              <dd><?php
-                               echo $driver_name = $driver_fname . " ". $driver_lname;
-                               ?></dd>
-                              <dt><strong>Estimated Amount:</strong></dt>
-                              <dd>500</dd>
-                              <dt><strong>Payment mode:</strong></dt>
-                              <dd>Cash/Card</dd>
-                              <dt><strong>Send Conformation:</strong></dt>
-                              <dd>Email/Mobile</dd>
-                              </dl>
 
-                              <div class="pull-right">
-                    <button class="btn-u btn-u-dark" type="button">Conform Booking</button>
-                </div>
+
+              <div class="panel-body">
+                                     <dl class="dl-horizontal">
+                              <dt><strong>Date&Time</strong></dt>
+                              <dd>
+                              Sep 25,2018 10:00 -15:00
+                                 
+                              </dd>
+                              
+                              <dt><strong>Location</strong></dt>
+                              <dd>
+                              Tarnaka
+                                
+                              </dd>
+                              
+                              <dt><strong>Driver Name</strong></dt>
+                              <dd>
+                              Raju
+                                 
+                              </dd>
+                              
+                              <dt><strong>Estimated Amount</strong></dt>
+                              <dd>
+                              500
+                                 
+                              </dd>
+                            
+                              <dt><strong>Payment mode</strong></dt>
+                              <dd>
+                              Cash/Card
+                                 
+                              </dd>
+                              
+                              <dt><strong>Send Confirmation</strong></dt>
+                              <dd>
+                              Email or Mobile
+                                
+                              </dd>
+                             
+                              <dt><strong></strong></dt>
+                              <dd>
+                                 
+                                 
+                              </dd>
+                             
+                           </dl>
+                                       </div>
+
+                        
+                            
 
                     </div>
 
                 </div>
-                <?php }}?>
+                <div class="ex">
+                    <button class="btn-u btn-u-dark" type="button">Conform Booking</button>
+                </div>
 
             </div>
             <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
