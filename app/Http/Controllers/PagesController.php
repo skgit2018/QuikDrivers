@@ -90,5 +90,11 @@ class PagesController extends Controller
     }       
     public function getpostimage(){
         return view('postimage');
-    }             
+    }   
+    public function getgoogle(){
+        return view('google');
+    }   
+    public function getfront(){
+        return view('front');
+    }                          
 }
