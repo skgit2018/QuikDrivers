@@ -75,7 +75,7 @@
                                  <a href="/cutomerdashboard"><i class="fa fa-bar-chart-o"></i>Dashboard</a>
                               </li>
                               <li class="list-group-item">
-                                 <a href="/customerprofile"><i class="fa fa-user"></i>My Profile</a>
+                                 <a href="/customerprofiles"><i class="fa fa-user"></i>My Profile</a>
                               </li>
                               <li class="list-group-item">
                                  <a href="/customerrides"><i class="fa fa-car"></i>My Rides</a>
