@@ -10,12 +10,5 @@ use Auth;
 
 class QdBookingController extends Controller
 {
-   public function driverbooking() {
-
-$driverbook = new QdBooking;
-
-$booking = 
-
-
-   }
+  
 }
