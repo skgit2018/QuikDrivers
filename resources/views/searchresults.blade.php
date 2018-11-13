@@ -157,7 +157,7 @@
    
    <div class="col-md-2">
       <ul class="deatilsdrivers">
-      <li><button class="btn-u btn-u-dark" type="button">Book Now</button></li>
+      <li><a href="/booking/user"><button class="btn-u btn-u-dark" type="button">Book Now</button></a></li>
       <li><a href="driverdetails"><button class="btn-u btn-u-dark" type="button">View More</button></a></li>
    </ul>
    </div>
