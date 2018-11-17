@@ -61,26 +61,26 @@
                            <div class="profile-bio">
                               <div class="row">
                                  <div class="col-md-14">
-                                    <span class="chamge"><img class="img-responsive md-margin-bottom-10" src="assets/img/team/img32-md.jpg" alt=""></span>
+                                    <span class="change"><img class="img-responsive md-margin-bottom-10" src="assets/img/avatar.png" alt="img"></span>
                                     <a class="btn-u btn-u-sm" href="#">Change Picture</a>
                                  </div>
                               </div>
                            </div>
                            <ul class="list-group sidebar-nav-v1 margin-bottom-40" id="sidebar-nav-1">
                               <li class="list-group-item active">
-                                 <a href="driverdashboard.html"><i class="fa fa-bar-chart-o"></i>Dashboard</a>
+                                 <a href="/driverdashboard"><i class="fa fa-bar-chart-o"></i>Dashboard</a>
                               </li>
                               <li class="list-group-item">
-                                 <a href="qd_drivers_profile.html"><i class="fa fa-user"></i>My Profile</a>
+                                 <a href="/customerprofiles"><i class="fa fa-user"></i>My Profile</a>
                               </li>
                               <li class="list-group-item">
-                                 <a href="qd_driver_rides.html"><i class="fa fa-car"></i>My Rides</a>
+                                 <a href="/customerrides"><i class="fa fa-car"></i>My Rides</a>
                               </li>
                               <li class="list-group-item">
-                                 <a href="qd_driver_payments.html"><i class="fa fa-cc-visa"></i>My Payments</a>
+                                 <a href="/customerpayments"><i class="fa fa-cc-visa"></i>My Payments</a>
                               </li>
                               <li class="list-group-item">
-                                 <a href="qd_driver_settings.html"><i class="fa fa-cog"></i>Settings</a>
+                                 <a href="/customersettings"><i class="fa fa-cog"></i>Settings</a>
                               </li>
                            </ul>
                         </div>
