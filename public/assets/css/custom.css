@@ -29,10 +29,7 @@ button.btn-u.btn-u-green a {
     color: #fff;
 }
 
-button.btn-u.btn-u-green:hover {
-    background: #5fb611;
-    /* font-family: verdana; */
-}
+
 /* how To work section*/
 section#Hows {
     background: #f0f0f091;
@@ -755,4 +752,413 @@ span.boot button.pull-right {
     padding: 8px;
     color: #fff;
     border-radius: 5px;
+}
+/* mobile*/
+
+.wrapperone {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    
+    min-height: 100%;
+    padding: 20px;
+  
+  }
+  
+  #formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  .fadeIn  p{
+  line-height: 30px;
+  font-weight:bold;
+  font-size:16px;
+  }
+  
+  
+  /* TABS */
+  
+  .fadeIn  h5.inactive {
+    color: #cccccc;
+  }
+  
+   .fadeIn h5.active {
+    color: #0d0d0d;
+    border-bottom: 2px solid #5fbae9;
+  }
+  .fadeIn.first{
+          padding: 29px;
+  }
+  
+  
+  
+  /* FORM TYPOGRAPHY*/
+  
+  #number-form input[type=button], input[type=submit], input[type=reset]  {
+   
+    border: none;
+    color: white;
+    padding: 8px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background:#004CA3 !important
+  }
+  
+   #number-form input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+    background-color: #39ace7;
+  }
+  
+  #number-form input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  
+  #number-form input[type=text] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 75%;
+  
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+        border: 2px solid #bfbcbc;
+  }
+  
+  #number-form input[type=text]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+   #number-form input[type=text]:placeholder {
+    color: #cccccc;
+  }
+  
+  
+  
+  /* ANIMATIONS */
+  
+  /* Simple CSS3 Fade-in-down Animation */
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+  .fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+  }
+  
+  .fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  
+  .fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  span.otp button {
+    background: #004CA3;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+span.otp button a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    margin-top: 12px;
+}
+ 
+  
+
+  
+  /* OTHERS */
+  
+  .reg-block h2, .reg-block p, .reg-block p a {
+    color: #0000008c;
+     font-weight: 700;
+     text-align: center;
+ }
+ .reg-block h2, .reg-block p, .reg-block p a {
+     color: #0000008c;
+     font-weight: 700;
+     text-align: center;
+ }
+ .form-block .input-group input.form-control {
+     background: transparent;
+     padding-left: 10px;
+     padding-right: 10px;
+     border-color: rgba(214,214,214,.5);
+     border-left: none;
+     color: #969595;
+     height: 39px;
+ }
+ .form-block .input-group input.form-control {
+     background: transparent;
+     padding-left: 10px;
+     padding-right: 10px;
+     border-color: rgba(214,214,214,.5);
+     border-left: none;
+     color: #969595;
+     height: 39px;
+ }
+ 
+ .btn-u.btn-block {
+     text-align: center;
+     background: #004CA3 !important;}
+     .login-block1 {
+        float: left;
+        width: 100%;
+        padding: 50px 0;
+        background: #d8dad5;
+    }
+ .banner-sec{
+     background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;
+     }
+ .container_login-block1{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);
+}
+
+.wrapperone {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    /*background: #7d7d7d;*/
+       background: url(../img/keys.jpg) no-repeat;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+  }
+  .btn-u.btn-block1 {
+    text-align: center;
+    background: #004CA3 !important;
+	    padding: 5px 28px;
+		border-radius:5px;
+
+}
+.reg-block1 h2, .reg-block1 p, .reg-block1 p a {
+   color: #0000008c;
+    font-weight: 700;
+    text-align: center;
+}
+.reg-block1{
+	padding: 0px 34px;
+}
+button.btn-u.btn-blocksss {
+    margin-left: 83px;
+    width: 42%;
+    height: 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.reg-block1-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+li.colo a {
+    color: #fff;
+    text-decoration: none;
+}
+.reg-block {
+    padding: 10px;
+}
+section#user div#formContent {
+    margin-left: 350px;
+}   
+
+/* driver pool new*/
+section#driverdetail .sky-form {
+    margin-top: 36px;
+}
+section#driverdetail .row {
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px #555;
+    background: #f9f9f9;
+    width: 80%;
+    margin-left: 56px;
+}
+
+ 
+.profile .panel-heading {
+    color: #585f69;
+    background: #269abc;
+    padding: 7px 15px;
+    border-bottom: solid 3px #f7f7f7;
+}
+
+
+
+/* new css*/
+
+.mdl-button--raised {
+    background: rgba(159, 159, 159, 0.9) none repeat scroll 0 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+}
+.mdl-button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 36px;
+    letter-spacing: 0;
+    line-height: 36px;
+    min-width: 64px;
+    outline: 0 none;
+    overflow: hidden;
+    padding: 0 8px;
+    position: relative;
+    text-align: center;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1) 0s, background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    will-change: box-shadow, transform;
+}
+
+.mdl-button--raised.addtoca {background: rgb(9, 133, 216);border-radius: 2px;box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);color: #fff;font-size: 13px;height: 38px; line-height: 38px;width: 100%;}
+
+/*booking form*/
+
+section#bookingForm .panel.panel-default {
+    background: transparent;
+    border: 0;
+}
+section#bookingForm div#profile {
+    border: 0;
+}
+section#bookingForm .tab-v1 .tab-content {
+    padding: 0;
+}
+section#bookingForm .pull-right {
+    float: right!important;
+    margin-right: 20px;
+}
+
+ .datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
+    color: #000000;
+    background-color: #337ab7;
+    border-color: #337ab7;
 }
