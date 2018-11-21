@@ -6,5 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class DriverRides extends Model
 {
-    //
+    public $timestamps = false;
+    protected $table = 'driver_pastbooking';
 }
