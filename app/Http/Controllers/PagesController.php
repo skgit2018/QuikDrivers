@@ -96,5 +96,14 @@ class PagesController extends Controller
     }   
     public function getfront(){
         return view('front');
-    }                          
+    }     
+    public function getmobile(){
+        return view('mobile ');
+    }   
+    public function getotpcheck(){
+        return view('otpcheck');
+    }    
+    public function getclint(){
+        return view('clint');
+    }                                                             
 }
